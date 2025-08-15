@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carte mère</title>
+  <link rel="stylesheet" href="Carte mère.css">
+  <script src="Carte mère.js" defer></script>
+  <link rel="icon" href="/Website Beta/Icones/Logo.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <video autoplay muted loop id="backgroundVideo">
+    <source src="/Website Beta/VIDEOS/Background.mp4" type="video/mp4">
+  </video>
+</head>
+<body class="bg-gray-100 font-sans">
+  <div class="mx-auto" style="max-width: 1600px;">
+    <div class="title-filters-container">
+      <div class="p-4 border-b">
+        <div class="tower-header">
+          <h1 class="tower-title">Carte mère</h1>
+          <span id="productCount" class="alimentation-count">(0)</span>
+        </div>
+        <div class="grid grid-cols-3 gap-4">
+          <select id="brandFilter" class="border p-2 rounded">
+            <option value="" disabled selected hidden>Marques</option>
+            <option value="">Toutes les marques</option>
+            <option value="ASRock">ASRock</option>
+            <option value="ASUS">ASUS</option>
+            <option value="Gigabyte">GIGABYTE</option>
+            <option value="MSI">MSI</option>
+          </select>
+          <select id="ATXFilter" class="border p-2 rounded">
+            <option value="" disabled selected hidden>Format carte mère</option>
+            <option value="">Tous les formats</option>
+            <option value="ATX">ATX</option>
+            <option value="E-ATX">E-ATX</option>
+            <option value="Micro-ATX">Micro ATX</option>
+            <option value="Mini ITX">Mini ITX</option>
+          </select>
+          <select id="chipsetFilter" class="border p-2 rounded">
+            <option value="" disabled selected hidden>Chipset</option>
+            <option value="">Tous les chipsets</option>
+            <option value="intel-400-series">Intel 400 Series (Z490, H470, B460, H410)</option>
+            <option value="intel-500-series">Intel 500 Series (Z590, B560, H510)</option>
+            <option value="intel-600-series">Intel 600 Series (Z690, H670, B660, H610)</option>
+            <option value="intel-700-series">Intel 700 Series (Z790, H770, B760)</option>
+            <option value="amd-300-series">AMD 300 Series (X370, B350, A320)</option>
+            <option value="amd-400-series">AMD 400 Series (X470, B450)</option>
+            <option value="amd-500-series">AMD 500 Series (X570, B550, A520)</option>
+            <option value="amd-600-series">AMD 600 Series (X670, B650)</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="grid grid-cols-3 gap-0">
+      <div class="main-container col-span-3 lg:col-span-2">
+        <div class="overflow-x-auto">
+          <table class="table-auto w-full text-left">
+            <thead class="bg-gray-100">
+              <tr>
+                <th class="filter p-3">MODELES</th>
+                <th>
+                  <div class="search-container">
+                    <input type="text" id="searchBar" class="search-bar" placeholder="Rechercher...">
+                    <span class="search-icon">🔍</span>
+                  </div>
+                </th>
+                <th class="filter p-3 cursor-pointer">NOTE</th>
+                <th class="filter p-3 cursor-pointer">PRIX</th>
+                <th class="filter p-3 cursor-pointer">DISPONIBILITÉ</th>
+              </tr>
+            </thead>
+            <tbody class="scrollable-products">
+              <!-- Les cartes mères seront ajoutées ici-->
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="col-span-3 lg:col-span-1">
+        <div>
+          <a href="/Website Beta/Page principale/Configurateur PC.html" class="close-button">X</a>
+        </div>
+        <div>
+          <img src="#" alt="" class="rounded-lg w-full">
+        </div>
+        <div class="mt-4">
+          <h2 class="font-bold text-lg"></h2>
+          <p class="text-gray-600 text-sm mt-2"></p>
+        </div>
+        <div class="p-4 text-right">
+          <button id="validateButton" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+            <a href="/Website Beta/Page du panier/Panier.html">VALIDER</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

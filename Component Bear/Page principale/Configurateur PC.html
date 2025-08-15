@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurateur PC</title>
+    <link rel="icon" href="../IMAGES/Image complémentaires/Logo.png">
+    <link rel="stylesheet" href="Configurateur PC.css">
+    <script src="Configurateur PC.js"></script>
+    <link rel="icon" href="../IMAGES/Image complémentaires/Logo site.jpg">
+    <video autoplay muted loop id="backgroundVideo">
+        <source src="../VIDEOS/Background.mp4" type="video/mp4">
+    </video>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../Page accueil/Accueil.html" class="logo">
+                <img src="../IMAGES/Image complémentaires/Logo.png" alt="header-icon" width="50px">
+            </a>
+        </div>
+        
+        <div class="name">
+            <p>Component Bear</p>
+        </div>
+
+        <div class="search-bar">
+            <form action="../Page recherche/recherche.html" method="GET">
+                <input type="text" id="search-input" name="q" placeholder="Rechercher un produit, une marque, une catégorie...">
+                <button type="submit">🔍</button>
+            </form>
+        </div>
+
+        <div class="icons">
+            <div class="picture-icon" style="text-decoration: none;">
+                <a href="../Page de connection/connection.html">
+                    <img src="../IMAGES/Image complémentaires/Red avatar.png" width="90px" alt="">
+                    <p>Compte</p>
+                </a>
+            </div>
+            <div class="picture-icon" style="text-decoration: none;">
+                <a href="../Page du panier/Panier.html">
+                    <img src="../IMAGES/Image complémentaires/Red panier.png" width="51px" alt="">
+                    <p>Panier</p>
+                </a>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../Page principale/Configurateur PC.html">Configurateur PC</a></li>
+            <li><a href="../Page des composants/Composants.html">Composants</a></li>
+            <li><a href="../Page des périphériques/Périphériques.html">Périphériques</a></li>
+            <li><a href="../Page de contact/Contactez-nous.html">Contactez-nous</a></li>
+            <li><a href="../Page d'informations sur notre entreprise/QSN.html">Qui sommes-nous ?</a></li>
+        </ul>
+    </nav>
+    <div class="ligne-rgb"></div>
+      
+    <div class="categories">
+    <h2>COMPOSANTS :</h2>
+    </div>
+    <div class="container">
+        <a href="../Pages des filtres des composants/Processeur/CPU.html" class="composant">
+            <img src="../Icones/CPU Icon.jpg" width="20%">
+            <h3>Processeur</h3>
+        </a>
+        <a href="../Pages des filtres des composants/Ventirad et AIO/Ventirad et AIO.html" class="composant">
+            <img src="../Icones/VENTIRAD Icon.jpg" width="20%">
+            <h3>Ventirad & AIO</h3>
+        </a>
+        <a href="../Pages des filtres des composants/Carte mère/Carte mère.html" class="composant">
+            <img src="../Icones/MOTHERBOARD Icon.jpg" width="25%">
+            <h3>Carte mère</h3>
+        </a>
+        <a href="../Pages des filtres des composants/Mémoire vive/RAM.html" class="composant">
+            <img src="../Icones/RAM Icon.png" width="20%">
+            <h3>Mémoire vive (RAM)</h3>
+        </a>
+        <a href="../Pages des filtres des composants/Carte graphique/GPU.html" class="composant">
+            <img src="../Icones/GPU Icon.jpg" width="20%">
+            <h3>Carte graphique</h3>
+        </a>
+        <a href="../Pages des filtres des composants/SSD/SSD.html" class="composant">
+            <img src="../Icones/SSD Icon.jpg" width="20%">
+            <h3>Disque dur SSD</h3>
+        </a>
+        <a href="../Pages des filtres des composants/HDD/HDD.html" class="composant">
+            <img src="../Icones/HDD Icon.jpg" width="20%">
+            <h3>Disque dur HDD</h3>
+        <a href="../Pages des filtres des composants/BoÎtier/BoÎtier.html" class="composant">
+            <img src="../Icones/TOWER Icon.jpg" width="20%">
+            <h3>BoÎtier</h3>
+        </a>
+        <a href="../Pages des filtres des composants/Alimentation/Alimentation.html" class="composant">
+            <img src="../Icones/POWER SUPPLY Icon.jpg" width="20%">
+            <h3>Alimentation</h3>
+        </a>
+    </div>
+    <br>
+    <div class="categories">
+    <h2>OPTIONS :</h2>
+    </div>
+    <div class="container">
+        <a href="../Pages des filtres options/Montage/Montage.html" class="option">
+            <img src="../IMAGES/images options/tournevis.png" width="20%">
+            <h3>Montage</h3>
+        </a>
+        <a href="../Pages des filtres options/OS/OS.html" class="option">
+            <img src="../IMAGES/images options/OS.png" width="20%">
+            <h3>Système d'exploitation</h3>
+        </a>
+        <a href="../Pages des filtres options/SATA/SATA.html" class="option">
+            <img src="../IMAGES/images options/SATA.png" width="20%">
+            <h3>Câble personnalisé</h3>
+        </a>
+        <a href="../Pages des filtres options/Ventilateur/Ventilateur.html" class="option">
+            <img src="../IMAGES/images options/ventilateur.png" width="20%">
+            <h3>Ventilateur de boîtier</h3>
+        </a>
+    </div>
+    <br>
+    <div class="categories">
+    <h2>PÉRIPHÉRIQUES :</h2>
+    </div>
+    <div class="container">
+        <a href="../Pages des filtres des périphériques/Clavier/Clavier.html" class="périphérique">
+            <img src="../IMAGES/images périphériques/Clavier.png" width="20%">
+            <h3>Clavier</h3>
+        </a>
+        <a href="../Pages des filtres des périphériques/Souris/Souris.html" class="périphérique">
+            <img src="../IMAGES/images périphériques/Souris.png" width="20%">
+            <h3>Souris</h3>
+        </a>
+        <a href="../Pages des filtres des périphériques/Tapis de souris/Tapis de souris.html" class="périphérique">
+            <img src="../IMAGES/images périphériques/Tapis de souris.png" width="20%">
+            <h3>Tapis de souris</h3>
+        </a>
+        <a href="../Pages des filtres des périphériques/Casque-micro/Casque-micro.html" class="périphérique">
+            <img src="../IMAGES/images périphériques/Casque-micro.png" width="20%">
+            <h3>Casque-micro</h3>
+        </a>
+        <a href="../Pages des filtres des périphériques/Moniteur/Moniteur.html" class="périphérique">
+            <img src="../IMAGES/images périphériques/Moniteur.png" width="20%">
+            <h3>Moniteur</h3>
+        </a>
+        <a href="../Pages des filtres des périphériques/Enceintes/Enceintes.html" class="périphérique">
+            <img src="../IMAGES/images périphériques/Enceintes.png" width="20%">
+            <h3>Enceintes</h3>
+        </a>
+        <br>
+    </div>
+    </div>
+
+    <div class="conteneur-recapitulatif">
+        <div class="recap-title">
+            <h2>RÉCAPITULATIF</h2>
+        </div>
+        
+        <h2>COMPOSANTS :</h2>
+    
+        <h3>Processeur :</h3>
+        <div class="selected-cpu dynamic-product">
+        <!-- Le processeur sélectionné sera affiché ici -->
+        </div>
+
+        <script>
+
+            const selectedCPU = JSON.parse(localStorage.getItem("selectedCPU")) || [];
+        
+            const selectedCPUContainer = document.querySelector(".selected-cpu");
+        
+            if (selectedCPU.length > 0) {
+    
+                selectedCPU.forEach(product => {
+                    const productElement = document.createElement("div");
+                    productElement.textContent = `${product.name} - ${product.price}`;
+                    selectedCPUContainer.appendChild(productElement);
+                });
+            } else {
+       
+                selectedCPUContainer.textContent = "Aucun processeur sélectionné.";
+            }
+        </script>
+
+        <h3>Ventirad ou AIO :</h3>
+        <div class="selected-refroidissement dynamic-product">
+        <!-- Le refroidissement sélectionné sera affiché ici -->
+        </div>
+
+        <script>
+            
+            const selectedRefroidissement = JSON.parse(localStorage.getItem("selectedRefroidissement")) || [];
+        
+          
+            const selectedRefroidissementContainer = document.querySelector(".selected-refroidissement");
+        
+            
+            if (selectedRefroidissement.length > 0) {
+               
+                selectedRefroidissement.forEach(product => {
+                    const productElement = document.createElement("div");
+                    productElement.textContent = `${product.name} - ${product.price}`;
+                    selectedRefroidissementContainer.appendChild(productElement);
+                });
+            } else {
+              
+                selectedRefroidissementContainer.textContent = "Aucun refroidissement sélectionné.";
+            }
+        </script>
+
+
+        <h3>Carte mère :</h3>
+        <div class="selected-motherboard dynamic-product">
+            <!-- La carte mère sélectionnée sera affichée ici -->
+        </div>
+
+    <script>
+      
+        const selectedMotherboard = JSON.parse(localStorage.getItem("selectedCarteMere")) || [];
+
+     
+        const selectedMotherboardContainer = document.querySelector(".selected-motherboard");
+
+        if (selectedMotherboard.length > 0) {
+            selectedMotherboard.forEach(product => {
+                const productElement = document.createElement("div");
+                productElement.textContent = `${product.name} - ${product.price}`;
+                selectedMotherboardContainer.appendChild(productElement);
+            });
+        } else {
+            selectedMotherboardContainer.textContent = "Aucune carte mère sélectionnée.";
+        }
+    </script>
+       
+        <h3>Mémoire vive :</h3>
+        <div class="selected-ram dynamic-product">
+            <!-- La RAM sélectionnée sera affichée ici -->
+        </div>
+ 
+        <script>
+    
+            const selectedRAM = JSON.parse(localStorage.getItem("selectedRAM")) || [];
+          
+            const selectedRAMContainer = document.querySelector(".selected-ram");
+          
+            if (selectedRAM.length > 0) {
+           
+              selectedRAM.forEach(product => {
+                const productElement = document.createElement("div");
+                productElement.textContent = `${product.name} - ${product.price}`;
+                selectedRAMContainer.appendChild(productElement);
+              });
+            } else {
+   
+              selectedRAMContainer.textContent = "Aucune mémoire vive sélectionnée.";
+            }
+          </script>
+        
+        <h3>Carte graphique :</h3>
+        <div class="selected-gpu dynamic-product">
+        <!-- La carte graphique sélectionnée sera affichée ici -->
+        </div>
+
+        <script>
+        
+        const selectedGPU = JSON.parse(localStorage.getItem("selectedGPU")) || [];
+
+        const selectedGPUContainer = document.querySelector(".selected-gpu");
+
+        if (selectedGPU.length > 0) {
+        selectedGPU.forEach(product => {
+            const productElement = document.createElement("div");
+            productElement.textContent = `${product.name} - ${product.price}`;
+            selectedGPUContainer.appendChild(productElement);
+        });
+        } else {
+        selectedGPUContainer.textContent = "Aucune carte graphique sélectionnée.";
+        }
+        </script>
+
+        <h3>SSD :</h3>
+        <div class="selected-ssd" class="dynamic-product">
+        <!-- Le SSD sélectionné sera affiché ici -->
+        </div>
+
+        <script>
+            
+            const selectedSSD = JSON.parse(localStorage.getItem("selectedSSD")) || [];
+        
+         
+            const selectedSSDContainer = document.querySelector(".selected-ssd");
+        
+         
+            if (selectedSSD.length > 0) {
+               
+                selectedSSD.forEach(product => {
+                    const productElement = document.createElement("div");
+                    productElement.textContent = `${product.name} - ${product.price}`;
+                    selectedSSDContainer.appendChild(productElement);
+                });
+            } else {
+
+                
+                selectedSSDContainer.textContent = "Aucun disque dur SSD sélectionné.";
+            }
+        </script>
+
+        <h3>Disque dur HDD :</h3>
+        <div class="selected-hdd dynamic-product">
+        <!-- Le HDD sélectionné sera affiché ici -->
+        </div>
+
+        <script>
+            
+            const selectedHDD = JSON.parse(localStorage.getItem("selectedHDD")) || [];
+        
+     
+            const selectedHDDContainer = document.querySelector(".selected-hdd");
+        
+            if (selectedHDD.length > 0) {
+                selectedHDD.forEach(product => {
+                    const productElement = document.createElement("div");
+                    productElement.textContent = `${product.name} - ${product.price}`;
+                    selectedHDDContainer.appendChild(productElement);
+                });
+            } else {
+                selectedHDDContainer.textContent = "Aucun disque dur HDD sélectionné.";
+            }
+        </script>
+
+        <h3>BoÎtier :</h3>
+        <div class="selected-tower dynamic-product">
+            <!-- Le boÎtier sélectionné sera affiché ici -->
+        </div>  
+    
+        <script>
+            
+            const selectedBoitier = JSON.parse(localStorage.getItem("selectedBoitier")) || [];
+    
+            const selectedTowerContainer = document.querySelector(".selected-tower");
+    
+            if (selectedBoitier.length > 0) {
+                selectedBoitier.forEach(product => {
+                    const productElement = document.createElement("div");
+                    productElement.textContent = `${product.name} - ${product.price}`;
+                    selectedTowerContainer.appendChild(productElement);
+                });
+            } else {
+                selectedTowerContainer.textContent = "Aucun boîtier sélectionné.";
+            }
+        </script>
+            
+        <h3>Alimentation :</h3>
+        <div class="selected-alims dynamic-product">
+            <!-- L'alim sélectionnée sera affiché ici -->
+        </div>
+    
+        <script>
+           
+            const selectedAlim = JSON.parse(localStorage.getItem("selectedAlim")) || [];
+    
+            const selectedAlimsContainer = document.querySelector(".selected-alims");
+    
+            if (selectedAlim.length > 0) {
+                selectedAlim.forEach(product => {
+                    const productElement = document.createElement("div");
+                    productElement.textContent = `${product.name} - ${product.price}`;
+                    selectedAlimsContainer.appendChild(productElement);
+                });
+            } else {
+                selectedAlimsContainer.textContent = "Aucun produit sélectionné.";
+            }
+        </script>
+    
+        <h2>OPTIONS :</h2>
+    
+        <h3>Montage :</h3>
+        <div class="selected-montage dynamic-product">
+            <!-- Le montage sélectionné sera affiché ici -->
+        </div>
+
+        <script>
+
+            const selectedMontage = JSON.parse(localStorage.getItem("selectedMontage")) || [];
+
+            const selectedMontageContainer = document.querySelector(".selected-montage");
+
+            if (selectedMontage.length > 0) {
+                selectedMontage.forEach(product => {
+                    const productElement = document.createElement("div");
+                    productElement.textContent = `${product.name} - ${product.price}`;
+                    selectedMontageContainer.appendChild(productElement);
+                });
+            } else {
+                selectedMontageContainer.textContent = "Aucun montage sélectionné.";
+            }
+        </script>
+
+        <h3>Système d'exploitation :</h3>
+        <div class="selected-OS" class="dynamic-product">
+            <!--L'OS sélectionné sera affiché ici -->
+        </div>
+
+        <script>
+
+            const selectedOS = JSON.parse(localStorage.getItem("selectedOS")) || [];
+
+            const selectedOSContainer = document.querySelector(".selected-OS");
+
+            if (selectedOS.length > 0) {
+                selectedOS.forEach(product => {
+                    const productElement = document.createElement("div");
+                    productElement.textContent = `${product.name} - ${product.price}`;
+                    selectedOSContainer.appendChild(productElement);
+                });
+            } else {
+                selectedOSContainer.textContent = "Aucun système d'exploitation sélectionné.";
+            }
+        </script>
+
+        <h3>Cable  personnalisé :</h3>
+        <div class="selected-sata dynamic-product">
+            <!--Le cable personnalisé sera affiché ici-->
+        </div>
+
+        <script>
+
+            const selectedSATA = JSON.parse(localStorage.getItem("selectedSATA")) || [];
+
+            const selectedSATAContainer = document.querySelector(".selected-sata");
+
+            if (selectedSATA.length > 0) {
+
+                selectedSATA.forEach(product => {
+                    const productElement = document.createElement("div");
+                    productElement.textContent = `${product.name} - ${product.price}`;
+                    selectedSATAContainer.appendChild(productElement);
+                });
+            } else {
+
+                selectedSATAContainer.textContent = "Aucun cable personnalisé sélectionné.";
+            }
+        </script>
+
+        <h3>Ventilateur de boîtier :</h3>
+        <div class="selected-Ventilateur" class="dynamic-product">
+            <!--Le ventilateur de boîtier selectionné sera affiché ici -->
+        </div>
+        
+        <script>
+
+            const selectedVentilateur = JSON.parse(localStorage.getItem("selectedVentilateur")) || [];
+
+            const selectedVentilateurContainer = document.querySelector(".selected-Ventilateur");
+
+            if (selectedVentilateur.length > 0) {
+                selectedVentilateur.forEach(product => {
+                    const productElement = document.createElement("div");
+                    productElement.textContent = `${product.name} - ${product.price}`;
+                    selectedVentilateurContainer.appendChild(productElement);
+                });
+            } else {
+                selectedVentilateurContainer.textContent = "Aucun ventilateur de boîtier sélectionné.";
+            }
+        </script>
+        
+        <h2>PÉRIPHÉRIQUES :</h2>
+    
+       
+        <h3>Clavier :</h3>
+        <div class="selected-clavier dynamic-product">
+            <!-- Le clavier sélectionné sera affiché ici -->
+        </div>
+
+        <script>
+   
+            const selectedClavier = JSON.parse(localStorage.getItem("selectedClavier")) || [];
+
+ 
+            const selectedClavierContainer = document.querySelector(".selected-clavier");
+
+            if (selectedClavier.length > 0) {
+       
+                selectedClavier.forEach(product => {
+                    const productElement = document.createElement("div");
+                    productElement.textContent = `${product.name} - ${product.price}`;
+                    selectedClavierContainer.appendChild(productElement);
+                });
+            } else {
+        
+                selectedClavierContainer.textContent = "Aucun clavier sélectionné.";
+            }
+        </script>
+
+        <h3>Souris :</h3>
+        <div class="selected-souris dynamic-product">
+            <!-- La souris sélectionnée sera affichée ici -->
+        </div>
+
+        <script>
+    
+            const selectedSouris = JSON.parse(localStorage.getItem("selectedSouris")) || [];
+
+            const selectedSourisContainer = document.querySelector(".selected-souris");
+
+           
+            if (selectedSouris.length > 0) {
+                
+                selectedSouris.forEach(product => {
+                    const productElement = document.createElement("div");
+                    productElement.textContent = `${product.name} - ${product.price}`;
+                    selectedSourisContainer.appendChild(productElement);
+                });
+            } else {
+               
+                selectedSourisContainer.textContent = "Aucune souris sélectionnée.";
+            }
+        </script>
+
+
+        <h3>Tapis de souris :</h3>
+        <div class="selected-tapis-souris dynamic-product">
+            <!-- Le tapis de souris sélectionné sera affiché ici -->
+        </div>
+
+        <script>
+    
+            const selectedTapisSouris = JSON.parse(localStorage.getItem("selectedTapisSouris")) || [];
+
+  
+            const selectedTapisSourisContainer = document.querySelector(".selected-tapis-souris");
+
+    
+            if (selectedTapisSouris.length > 0) {
+       
+                selectedTapisSouris.forEach(product => {
+                    const productElement = document.createElement("div");
+                    productElement.textContent = `${product.name} - ${product.price}`;
+                    selectedTapisSourisContainer.appendChild(productElement);
+                });
+            } else {
+        
+                selectedTapisSourisContainer.textContent = "Aucun tapis de souris sélectionné.";
+            }
+        </script>
+
+        <h3>Casque-micro :</h3>
+        <div class="selected-casque-micro dynamic-product">
+        <!-- Le casque-micro sélectionné sera affiché ici -->
+        </div>
+
+        <script>
+          
+            const selectedCasqueMicro = JSON.parse(localStorage.getItem("selectedCasqueMicro")) || [];
+             
+            const selectedCasqueMicroContainer = document.querySelector(".selected-casque-micro");
+        
+           
+            if (selectedCasqueMicro.length > 0) {
+               
+                selectedCasqueMicro.forEach(product => {
+                    const productElement = document.createElement("div");
+                    productElement.textContent = `${product.name} - ${product.price}`;
+                    selectedCasqueMicroContainer.appendChild(productElement);
+                });
+            } else {
+
+                selectedCasqueMicroContainer.textContent = "Aucun casque micro sélectionné.";
+            }
+        </script>
+
+        <h3>Moniteur :</h3>
+        <div class="selected-moniteur dynamic-product">
+            <!-- Le moniteur sélectionné sera affiché ici -->
+        </div>
+
+        <script>
+
+            const selectedMoniteur = JSON.parse(localStorage.getItem("selectedMoniteur")) || [];
+
+            const selectedMoniteurContainer = document.querySelector(".selected-moniteur");
+
+            if (selectedMoniteur.length > 0) {
+      
+                selectedMoniteur.forEach(product => {
+                    const productElement = document.createElement("div");
+                    productElement.textContent = `${product.name} - ${product.price}`;
+                    selectedMoniteurContainer.appendChild(productElement);
+                });
+            } else {
+               
+                selectedMoniteurContainer.textContent = "Aucun moniteur sélectionné.";
+            }
+        </script>
+
+        <h3>Enceintes :</h3>
+<div class="selected-enceintes  sous une mlemedynamic-product">
+    <!-- Les enceintes sélectionnées seront affichées ici -->
+</div>
+
+<script>
+    
+    const selectedEnceintes = JSON.parse(localStorage.getItem("selectedEnceintes")) || [];
+
+    const selectedEnceintesContainer = document.querySelector(".selected-enceintes");
+
+    if (selectedEnceintes.length > 0) {
+       
+        selectedEnceintes.forEach(product => {
+            const productElement = document.createElement("div");
+            productElement.textContent = `${product.name} - ${product.price}`;
+            selectedEnceintesContainer.appendChild(productElement);
+        });
+    } else {
+       
+        selectedEnceintesContainer.textContent = "Aucune(s) enceinte(s) sélectionnée(s).";
+    }
+</script>
+
+<div class="saved-configs">
+    <h2>Configurations Sauvegardées</h2>
+    <div class="config-container"></div>
+</div>
+
+    <div class="total-section">
+        <h2>TOTAL :</h2>
+        <div class="total-price" id="total-price">0.00 €</div>
+        <button id="add-to-cart" class="save-config-btn"><a href="/Website Beta/Page du panier/Panier.html">Ajouter au panier</a></button>
+        <button id="new-config" class="new-config-btn">Nouvelle Config</button>
+        <button id="delete-config" class="delete-config-btn">Supprimer</button>
+        <button id="save-config" class="save-config-btn">Sauvegarder</button>
+    </div>
+</div>
+
+<div id="save-popup" class="popup">
+    <div class="popup-content">
+        <h3>Entrez un nom pour votre configuration :</h3>
+        <input type="text" id="config-name" placeholder="Nom de la configuration">
+        <button id="confirm-save">Sauvegarder</button>
+        <button id="cancel-save">Annuler</button>
+    </div>
+</div>
+
+<div id="reset-popup" class="popup">
+    <div class="popup-content">
+        <h3>Êtes-vous sûr de vouloir réinitialiser la configuration ?</h3>
+        <button id="confirm-reset">Oui</button>
+        <button id="cancel-reset">Non</button>
+    </div>
+</div>
+
+<div id="delete-popup" class="popup">
+    <div class="popup-content">
+        <h3>Êtes-vous sûr de vouloir supprimer la configuration ?</h3>
+        <button id="confirm-delete">Oui</button>
+        <button id="cancel-delete">Non</button>
+    </div>
+</div>
+
+<div id="save-popup" class="popup">
+    <div class="popup-content">
+        <h3>Entrez un nom pour votre configuration :</h3>
+        <input type="text" id="config-name" placeholder="Nom de la configuration">
+        <button id="confirm-save">Sauvegarder</button>
+        <button id="cancel-save">Annuler</button>
+    </div>
+</div>
+
+<script src="Configurateur PC.js"></script>
+</body>
+</html>

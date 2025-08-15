@@ -1,0 +1,305 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: red;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; 
+    background-color: black;
+    color: red;
+    height: 75px; 
+}
+
+video#backgroundVideo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: auto;
+    width: 50px; 
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    font-size: 25px; 
+}
+
+.search-bar {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+  }
+  
+  .search-bar form {
+    display: flex;
+    width: 100%; 
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .search-bar input {
+    padding: 6px;
+    width: 70%; 
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+    font-size: 15px;
+  }
+  
+  .search-bar button {
+    padding: 6px 10px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: red;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  
+  .search-bar button:hover {
+    background-color: #777;
+  }
+
+.icons {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.picture-icon {
+    margin-left: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    text-decoration: none;
+}
+
+.picture-icon img {
+    height: auto;
+}
+
+.picture-icon p {
+    margin-top: 5px;
+    font-size: 15px;
+    background-color: black;
+    color: red;
+    text-decoration: none;
+    text-align: center; 
+}
+
+.picture-icon a {
+    text-decoration: none; 
+}
+
+nav {
+    background-color: black;
+    color: red;
+    padding: 5px; 
+    font-size: 25px; 
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    background-color: black;
+    color: red;
+    text-decoration: none;
+    font-size: 20px; 
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.ligne-rgb {
+    height: 5px; 
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 200% 100%;
+    animation: rgbAnimation 5s linear infinite;
+}
+
+@keyframes rgbAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }
+}
+ 
+h1 {
+    text-align: center;
+}
+    
+label {
+    font-weight: bold;
+}
+    
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+    
+.result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-decoration-line: none;
+}
+
+.LoginIcon {
+    z-index: 10;
+    width: 1000px;
+    height: 1000px;
+    text-decoration-line: none;
+}
+
+.form-container {
+    background-color: black;
+    color :red;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 100%;
+    max-width: 600px; 
+    margin: auto;
+    margin-top: 50px;
+    text-decoration: none;
+}
+
+
+.form-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: red;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.form-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+    text-decoration: none;
+}
+
+.form-table td {
+    padding: 0.75rem;
+    vertical-align: middle;
+    color: red;
+    text-decoration: none;
+}
+
+.form-table label {
+    font-weight: bold;
+    color: red;
+}
+
+.form-table input, 
+.form-table select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    text-decoration: none;
+}
+
+.form-table input:focus, 
+.form-table select:focus {
+    outline: none;
+    border-color: #4f46e5;
+    box-shadow: 0 0 8px rgba(79, 70, 229, 0.5);
+    text-decoration: none;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: red;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.submit-btn:hover {
+    background-color: black;
+    color: red;
+    text-decoration: none;
+}
+
+.login-text {
+    text-align: center;
+    margin-top: 1rem;
+    color: red;
+    background-color: black;
+    text-decoration: none;
+}
+
+.login-link {
+    color: #4f46e5;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-link:hover {
+    text-decoration: none;
+    color: #4f46e5;
+}
+
+a {
+   text-decoration: none;
+}

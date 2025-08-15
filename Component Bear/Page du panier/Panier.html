@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier</title>
+    <link rel="icon" href="../IMAGES/Image complémentaires/Logo.png">
+    <link rel="stylesheet" href="Panier.css">
+    <script src="Panier.js"></script>
+    <link rel="icon" href="../IMAGES/Image complémentaires/Logo site.jpg">
+    <video autoplay muted loop id="backgroundVideo">
+        <source src="../VIDEOS/Background.mp4" type="video/mp4">
+    </video>
+</head>
+<body>
+<header>
+  <div class="logo">
+      <a href="../Page accueil/Accueil.html" class="logo">
+          <img src="../IMAGES/Image complémentaires/Logo.png" alt="header-icon" width="50px">
+      </a>
+  </div>
+  
+  <div class="name">
+      <p>Component Bear</p>
+  </div>
+
+  <div class="search-bar">
+    <form action="../Page recherche/recherche.html" method="GET">
+        <input type="text" id="search-input" name="q" placeholder="Rechercher un produit, une marque, une catégorie...">
+        <button type="submit">🔍</button>
+    </form>
+  </div>
+
+  <div class="icons">
+      <div class="picture-icon" style="text-decoration: none;">
+          <a href="../Page de connection/connection.html">
+              <img src="../IMAGES/Image complémentaires/Red avatar.png" width="90px" alt="">
+              <p>Compte</p>
+          </a>
+      </div>
+      <div class="picture-icon" style="text-decoration: none;">
+          <a href="../Page du panier/Panier.html">
+              <img src="../IMAGES/Image complémentaires/Red panier.png" width="51px" alt="">
+              <p>Panier</p>
+          </a>
+      </div>
+  </div>
+</header>
+<nav>
+  <ul>
+      <li><a href="../Page principale/Configurateur PC.html">Configurateur PC</a></li>
+      <li><a href="../Page des composants/Composants.html">Composants</a></li>
+      <li><a href="../Page des périphériques/Périphériques.html">Périphériques</a></li>
+      <li><a href="../Page de contact/Contactez-nous.html">Contactez-nous</a></li>
+      <li><a href="../Page d'informations sur notre entreprise/QSN.html">Qui sommes-nous ?</a></li>
+  </ul>
+</nav>
+<div class="ligne-rgb"></div>
+<div class="master-container">
+    <div class="left-column">
+      <div class="card-config cart">
+        <label class="title">Configurations :<br></label>
+        <br>
+        <div id="configurations-panier">
+          <!-- Contenu des configs -->
+        </div>
+      </div>
+      <div class="card cart">
+        <label class="title">Composants & périphériques individuels</label>
+        <div id="composants-panier">
+          <!-- Contenu des produits individuels -->
+        </div>
+      </div>
+    </div>
+  
+    <!-- récap -->
+    <div class="card checkout">
+      <label class="title">Récapitulatif</label>
+      <div class="details">
+        <span>Total :</span>
+        <span id="total-panier">0.00 €</span>
+        <span>Réduction :</span>
+        <span id="reduction">0.00 €</span>
+        <span>Frais de livraison :</span>
+        <span id="frais-livraison">0.00 €</span>
+      </div>
+      <div class="coupons">
+        <label class="title">Codes promotionnels</label>
+        <form class="form">
+          <input type="text" id="promo-code" placeholder="Entrez votre code promotionnel" class="input_field">
+          <button type="button" id="apply-promo">Appliquer</button>
+        </form>
+      </div>
+      <div class="checkout--footer">
+        <label class="price" id="total-final">0.00 €</label>
+        <br>
+        <button class="checkout-btn"><a href="../Page de payement/Payement.html">Passer au paiement</a></button>
+      </div>
+    </div>
+  </div>
+<script src="Panier.js"></script>
+</body>
+</html>

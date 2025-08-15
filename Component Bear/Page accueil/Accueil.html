@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component Bear</title>
+    <link rel="icon" href="../IMAGES/Image complémentaires/Logo.png">
+    <link rel="stylesheet" href="Accueil.css">
+    <script src="Accueil.js"></script>
+    <link rel="icon" href="../IMAGES/Image complémentaires/Logo site.jpg">
+    <video autoplay muted loop id="backgroundVideo">
+        <source src="../VIDEOS/Background.mp4" type="video/mp4">
+    </video>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../Page principale/Configurateur PC.html" class="logo">
+                <img src="../IMAGES/Image complémentaires/Logo.png" alt="header-icon" width="50px">
+            </a>
+        </div>
+        
+        <div class="name">
+            <p>Component Bear</p>
+        </div>
+
+        <div class="search-bar">
+            <form action="../Page recherche/recherche.html" method="GET">
+                <input type="text" id="search-input" name="q" placeholder="Rechercher un produit, une marque, une catégorie...">
+                <button type="submit">🔍</button>
+            </form>
+        </div>
+
+        <div class="icons">
+            <div class="picture-icon" style="text-decoration: none;">
+                <a href="../Page de connection/connection.html">
+                    <img src="../IMAGES/Image complémentaires/Red avatar.png" width="90px" alt="">
+                    <p>Compte</p>
+                </a>
+            </div>
+            <div class="picture-icon" style="text-decoration: none;">
+                <a href="../Page du panier/Panier.html">
+                    <img src="../IMAGES/Image complémentaires/Red panier.png" width="51px" alt="">
+                    <p>Panier</p>
+                </a>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../Page principale/Configurateur PC.html">Configurateur PC</a></li>
+            <li><a href="../Page des composants/Composants.html">Composants</a></li>
+            <li><a href="../Page des périphériques/Périphériques.html">Périphériques</a></li>
+            <li><a href="../Page de contact/Contactez-nous.html">Contactez-nous</a></li>
+            <li><a href="../Page d'informations sur notre entreprise/QSN.html">Qui sommes-nous ?</a></li>
+        </ul>
+    </nav>
+    <div class="ligne-rgb"></div>
+
+    <section id="avantages">
+        <h2>Pourquoi choisir notre service ?</h2>
+        <div class="avantages-container">
+            <div class="avantage">
+                <h3>Assistance artificielle et humaine</h3>
+                <p>Une intelligence artificielle est à votre disposition en bas à droite de cette page ainsi que notre équipe via le formulaire de contact.</p>
+            </div>
+            <div class="avantage">
+                <h3>Économies</h3>
+                <p>Nous recherchons les meilleurs prix pour les composants, sans aucune marge ajoutée.</p>
+            </div>
+            <div class="avantage">
+                <h3>Service sur Mesure</h3>
+                <p>Chaque PC est conçu selon vos besoins spécifiques et vos préférences esthétiques.</p>
+            </div>
+        </div>
+    </section>
+    
+    <h2>Recevez votre PC gamer !</h2>
+
+    <div class="info-box">
+        <div class="info-item">
+            <img src="/Website Beta/IMAGES/Image complémentaires/VISA.png" alt="Paiement sécurisé">
+            <p><strong>Paiement Sécurisé</strong></p>
+            <p>Carte   bancaire , PayPal, Google Pay ou encore Apple Pay (la plupart sont en dévellopement)</p>
+        </div>
+        <div class="info-item">
+            <img src="/Website Beta/IMAGES/Image complémentaires/Logos/Bpost.png" alt="Expédition rapide">
+            <p><strong>Expédition Rapide</strong></p>
+            <p>Nos PC sont expédiés entre 10 à 15 jours ouvrés (hors-weekend).</p>
+            <p>Nous livrons via le service de Bpost à l'échelle internationale.</p>
+        </div>
+        <div class="info-item">
+            <img src="/Website Beta/IMAGES/Image complémentaires/coche validation.webp" alt="Garantie 2 ans">
+            <p><strong>Garantie de 2 Ans</strong></p>
+            <p>Nos PC sont garantis pendant 2 ans !</p>
+        </div>
+        <div class="info-item">
+            <img src="/Website Beta/IMAGES/Image complémentaires/clé à molette.webp" alt="Service après-vente">
+            <p><strong>Service Après-Vente</strong></p>
+            <p>Nos techniciens s'occupent de vos requêtes sous 48 heures</p>
+        </div>
+    </div>
+
+    <h2>Créez votre config 100% sur mesure</h2>
+
+    <div class="custom-pc-container">
+        <div class="custom-pc-image">
+            <img src="/Website Beta/IMAGES/Image complémentaires/full pack.webp" alt="PC sur mesure">
+        </div>
+        <div class="custom-pc-text">
+            <h2><span class="highlight">//</span> CRÉEZ VOTRE CONFIG 100% SUR MESURE</h2>
+            <p>Notre service de montage de PC sur mesure vous permet de créer la machine idéale, adaptée à vos besoins et prête à l'emploi.</p>
+            <p>Choisissez vos composants, et notre équipe d'experts s'occupe de l'assemblage avec soin pour des performances optimales dès le premier démarrage !</p>
+            <button  class="custom-button"><a href="../Page de contact/Contactez-nous.html" style="text-decoration: none;color: white;">Je veux un devis personnalisé !</a></button>
+            <br>
+            <button  class="custom-button"><a href="../Page principale/Configurateur PC.html" style="text-decoration: none;color: white;">Aller au configurateur PC</a></button>
+        </div>
+    </div>
+
+<h2>Nos PC vedettes :</h2>
+
+<div class="carousel">
+    <button class="carousel-button prev" onclick="moveCarousel(-1)">&#10094;</button>
+    <div class="carousel-container">
+        
+        <div class="card">
+            <div class="bg uwu"></div>
+            <div class="bg"></div>
+            <div class="content">
+                <div class="img">
+                    <img src="/Website Beta/IMAGES/Image complémentaires/PC/PC Abyssin GEFORCE RTX® 4070 Ti SUPER.png" width="75%">
+                </div>
+                <div class="p">
+                    <h3>PC Inferno</h3>
+                    <p>Carte graphique Nvidia GeForce RTX 4070 Ti SUPER</p>
+                    <p>Processeur Intel Core I5-14600KF</p>
+                    <p>Carte mère</p>
+                    <p>RAM Kingston Fury Beast RGB 2x16 Go DDR5 6000 MHz</p>
+                    <p>SSD Samsung 990 EVO Plus M.2 PCIe NVMe 2 To</p>
+                    <p>Boîtier</p>
+                    <p class="price">2400€</p>
+                    <a href="#" class="add-to-basket" data-config="inferno" onclick="addFeaturedPCToCart('PC Inferno', '/Website Beta/IMAGES/Image complémentaires/PC/PC Abyssin GEFORCE RTX® 4070 Ti SUPER.png', '2400€', ['Carte graphique Nvidia GeForce RTX 4070 Ti SUPER', 'Processeur Intel Core I5-14600KF', 'RAM Kingston Fury Beast RGB 2x16 Go DDR5 6000 MHz', 'SSD Samsung 990 EVO Plus M.2 PCIe NVMe 2 To'])">Ajouter au panier</a>
+                </div>               
+            </div>
+        </div>     
+        <div class="card">
+            <div class="bg uwu"></div>
+            <div class="bg"></div>
+            <div class="content">
+                <div class="img">
+                    <img src="/Website Beta/IMAGES/Image complémentaires/PC/PC Savannah V2 by MSI RTX® 4060 Ti.png" width="75%">
+                </div>
+                <div class="p">
+                    <h3>PC Diabolo</h3>
+                    <p>Carte graphique Nvidia GeForce RTX 4060 Ti</p>
+                    <p>Processeur AMD Ryzen 7 5700X</p>
+                    <p>Carte mère</p>
+                    <p>AMD Kingston Fury Beast RGB 2x8 Go DDR4 3200 MHz</p>
+                    <p>SSD Samsung 990 EVO Plus M.2 PCIe NVMe 2 To</p>
+                    <p>Boîtier</p>
+                    <p class="price">2400€</p>
+                    <a href="#" class="add-to-basket" 
+                    onclick="addFeaturedPCToCart(
+                        'PC Diabolo', 
+                        '/Website Beta/IMAGES/Image complémentaires/PC/PC Savannah V2 by MSI RTX® 4060 Ti.png', 
+                        '2400€', 
+                        ['Carte graphique Nvidia GeForce RTX 4060 Ti', 'Processeur AMD Ryzen 7 5700X', 'RAM Kingston Fury Beast RGB 2x8 Go DDR4 3200 MHz', 'SSD Samsung 990 EVO Plus M.2 PCIe NVMe 2 To']
+                    )">
+                    Ajouter au panier
+                 </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+<div class="bg uwu"></div>
+<div class="bg"></div>
+<div class="content">
+    <div class="img">
+          <img src="/Website Beta/IMAGES/Image complémentaires/PC/PC Omicron GEFORCE RTX® 4080 SUPER.png" width="75%">
+    </div>
+    <div class="p">
+        <h3>PC Black-border</h3>
+          <p>Carte graphique Nvidia GeForce RTX 4080 SUPER</p>
+          <p>Processeur Intel Core I9-14600KF</p>0
+          <p>Carte mère</p>
+          <p>RAM Kingston Fury Beast RGB 2x16 Go DDR5 6000 MHz</p>
+          <p>SSD Samsung 990 EVO Plus M.2 PCIe NVMe 2 To</p>
+          <p>Boîtier</p>
+          <p class="price">2400€</p>
+          <a href="#" class="add-to-basket" 
+   onclick="addFeaturedPCToCart(
+       'PC Black-border', 
+       '/Website Beta/IMAGES/Image complémentaires/PC/PC Omicron GEFORCE RTX® 4080 SUPER.png', 
+       '2400€', 
+       ['Carte graphique Nvidia GeForce RTX 4080 SUPER', 'Processeur Intel Core I9-14600KF', 'RAM Kingston Fury Beast RGB 2x16 Go DDR5 6000 MHz', 'SSD Samsung 990 EVO Plus M.2 PCIe NVMe 2 To']
+   )">
+   Ajouter au panier
+</a>
+    </div>
+</div>
+</div>
+
+
+<div class="card">
+<div class="bg uwu"></div>
+<div class="bg"></div>
+<div class="content">
+    <div class="img">
+          <img src="/Website Beta/IMAGES/Image complémentaires/PC/PC Rainbow GEFORCE RTX® 4070 Ti SUPER.png" width="75%">
+    </div>
+    <div class="p">
+        <h3>PC Nova</h3>
+          <p>RTX 4070 Ti SUPER</p>
+          <p>Intel Core I7-14700KF</p>
+          <p>Carte mère</p>
+          <p>Corsair Vengeance RGB DDR5 2x16 Go 6000 Mhz Noir</p>
+          <p>SSD Samsung 990 EVO Plus M.2 PCIe NVMe 2 To</p>
+          <p>Boîtier</p>
+          <p class="price">2400€</p>
+          <a href="#" class="add-to-basket" 
+   onclick="addFeaturedPCToCart(
+       'PC Nova', 
+       '/Website Beta/IMAGES/Image complémentaires/PC/PC Rainbow GEFORCE RTX® 4070 Ti SUPER.png', 
+       '2400€', 
+       ['Carte graphique Nvidia GeForce RTX 4070 Ti SUPER', 'Processeur Intel Core I7-14700KF', 'RAM Corsair Vengeance RGB DDR5 2x16 Go 6000 Mhz Noir', 'SSD Samsung 990 EVO Plus M.2 PCIe NVMe 2 To']
+   )">
+   Ajouter au panier
+</a>
+    </div>
+</div>
+</div>
+
+<div class="card">
+<div class="bg uwu"></div>
+<div class="bg"></div>
+<div class="content">
+    <div class="img">
+          <img src="/Website Beta/IMAGES/Image complémentaires/PC/PC Typhoon V2 GEFORCE RTX® 4060.png" width="75%">
+    </div>
+    <div class="p">
+        <h3>PC Typhon</h3>
+          <p>Nvidia GeForce RTX 4060</p>
+          <p>AMD Ryzen 5 5600 4.4 GHz</p>
+          <p>Carte mère</p>
+          <p>Kingston Fury Beast RGB 2x8 Go DDR4 3200 MHz</p>
+          <p>SSD Samsung 990 EVO Plus M.2 PCIe NVMe 2 To</p>
+          <p>Boîtier</p>
+          <p class="price">2400€</p>
+          <a href="#" class="add-to-basket" 
+          onclick="addFeaturedPCToCart(
+              'PC Typhon', 
+              '/Website Beta/IMAGES/Image complémentaires/PC/PC Typhoon V2 GEFORCE RTX® 4060.png', 
+              '2400€', 
+              ['Carte graphique Nvidia GeForce RTX 4060', 'Processeur AMD Ryzen 5 5600 4.4 GHz', 'RAM Kingston Fury Beast RGB 2x8 Go DDR4 3200 MHz', 'SSD Samsung 990 EVO Plus M.2 PCIe NVMe 2 To']
+          )">
+          Ajouter au panier
+       </a>
+    </div>
+</div>
+</div>
+
+<div class="card">
+<div class="bg uwu"></div>
+<div class="bg"></div>
+<div class="content">
+    <div class="img">
+          <img src="/Website Beta/IMAGES/Image complémentaires/PC/PC TRACER RTX® 4070 SUPER.png" width="75%">
+    </div>
+    <div class="p">
+        <h3>PC tracker</h3>
+          <p>Carte graphique Nvidia GeForce RTX</p>
+          <p>Processeur</p>
+          <p>Carte mère</p>
+          <p>RAM Corsair Vengeance DDR5 RGB 2x16 Go 6000  Mhz</p>
+          <p>SSD Samsung 990 EVO Plus M.2 PCIe NVMe 2 To</p>
+          <p>Boîtier</p>
+          <p class="price">2400€</p>
+          <a href="#" class="add-to-basket" 
+          onclick="addFeaturedPCToCart(
+              'PC Tracker', 
+              '/Website Beta/IMAGES/Image complémentaires/PC/PC TRACER RTX® 4070 SUPER.png', 
+              '2400€', 
+              ['Carte graphique Nvidia GeForce RTX 4070 SUPER', 'Processeur Intel Core I7-13700K', 'RAM Corsair Vengeance DDR5 RGB 2x16 Go 6000 Mhz', 'SSD Samsung 990 EVO Plus M.2 PCIe NVMe 2 To']
+          )">
+          Ajouter au panier
+       </a>
+    </div>
+</div>
+</div>
+
+<div class="card">
+<div class="bg uwu"></div>
+<div class="bg"></div>
+<div class="content">
+    <div class="img">
+          <img src="/Website Beta/IMAGES/Image complémentaires/PC/PC Saphire GEFORCE RTX® 4080.png" width="75%">
+    </div>
+    <div class="p">
+        <h3>PC metadata</h3>
+          <p>Carte graphique NVIDIA GeForce RTX 5090</p>
+          <p>Intel Core I7 12700KF 5.0 Ghz</p>
+          <p>Carte mère MSI PRO Z790-P WIFI</p>
+          <p>SSD Samsung 990 EVO Plus M.2 PCIe NVMe 2 To</p>
+          <p>Boîtier XIGMATEK AQUA III NOIR</p>
+          <p class="price">2400€</p>
+          <a href="#" class="add-to-basket" 
+          onclick="addFeaturedPCToCart(
+              'PC Metadata', 
+              '/Website Beta/IMAGES/Image complémentaires/PC/PC Saphire GEFORCE RTX® 4080.png', 
+              '2400€', 
+              ['Carte graphique Nvidia GeForce RTX 4080', 'Processeur Intel Core I7-12700KF 5.0 GHz', 'Carte mère MSI PRO Z790-P WIFI', 'SSD Samsung 990 EVO Plus M.2 PCIe NVMe 2 To', 'Boîtier XIGMATEK AQUA III NOIR']
+          )">
+          Ajouter au panier
+       </a>
+    </div>
+</div>
+</div>
+
+<div class="card">
+<div class="bg uwu"></div>
+<div class="bg"></div>
+<div class="content">
+    <div class="img">
+          <img src="/Website Beta/IMAGES/Image complémentaires/PC/PC Ryu Radeon RX 7900 XTX.png" width="75%">
+    </div>
+    <div class="p">
+        <h3>PC Rise of performances</h3>
+          <p>Carte graphique AMD Radeon RX 7900 XTX Taichi white OC</p>
+          <p>Processeur AMD Ryzen 7 9700X</p>
+          <p>Carte mère</p>
+          <p>RAM Kingston FURY Beast RGB 2x16 Go DDR5 6000 Mhz</p>
+          <p>SSD Samsung 990 EVO Plus M.2 PCIe NVMe 2 To</p>
+          <p>Boîtier Corsair 5000D</p>
+          <p class="price">2400€</p>
+          <a href="#" class="add-to-basket" 
+   onclick="addFeaturedPCToCart(
+       'PC Rise of Performances', 
+       '/Website Beta/IMAGES/Image complémentaires/PC/PC Ryu Radeon RX 7900 XTX.png', 
+       '2400€', 
+       ['Carte graphique AMD Radeon RX 7900 XTX Taichi White OC', 'Processeur AMD Ryzen 7 9700X', 'RAM Kingston FURY Beast RGB 2x16 Go DDR5 6000 Mhz', 'SSD Samsung 990 EVO Plus M.2 PCIe NVMe 2 To', 'Boîtier Corsair 5000D']
+   )">
+   Ajouter au panier
+</a>
+    </div>
+</div>
+</div>
+
+<div class="card">
+<div class="bg uwu"></div>
+<div class="bg"></div>
+<div class="content">
+    <div class="img">
+          <img src="/Website Beta/IMAGES/Image complémentaires/PC/PC Phanter GEFORCE RTX® 4070 Ti SUPER.png" width="75%">
+    </div>
+    <div class="p">
+        <h3>PC Fury</h3>
+          <p>Carte graphique Nvidia GeForce RTX 4070 Ti SUPER</p>
+          <p>Processeur AMD Ryzen 7 9700X</p>
+          <p>Carte mère</p>
+          <p>RAM Kingston FURY Beast RGB 2x16 Go DDR5 6000 Mhz</p>
+          <p>SSD Samsung 990 EVO Plus M.2 PCIe NVMe 2 To</p>
+          <p>Boîtier Corsair 5000D</p>
+          <p class="price">2400€</p>
+          <a href="#" class="add-to-basket" 
+   onclick="addFeaturedPCToCart(
+       'PC Fury', 
+       '/Website Beta/IMAGES/Image complémentaires/PC/PC Phanter GEFORCE RTX® 4070 Ti SUPER.png', 
+       '2400€', 
+       ['Carte graphique Nvidia GeForce RTX 4070 Ti SUPER', 'Processeur AMD Ryzen 7 9700X', 'RAM Kingston FURY Beast RGB 2x16 Go DDR5 6000 Mhz', 'SSD Samsung 990 EVO Plus M.2 PCIe NVMe 2 To', 'Boîtier Corsair 5000D']
+   )">
+   Ajouter au panier
+</a>
+    </div>
+</div>
+</div>
+
+<div class="card">
+<div class="bg uwu"></div>
+<div class="bg"></div>
+<div class="content">
+    <div class="img">
+          <img src="/Website Beta/IMAGES/Image complémentaires/PC/PC Orion GEFORCE RTX 5080  (Aucun).png" width="75%">
+    </div>
+    <div class="p">
+        <h3>PC white stone</h3>
+          <p>Carte graphique Nvidia GeForce RTX 5080</p>
+          <p>Processeur AMD Ryzen 7 9800X3D</p>
+          <p>Carte mère</p>
+          <p>RAM Kingston FURY Renegade RGB 2x16 Go DDR5 6000 Mhz</p>
+          <p>SSD Samsung 990 EVO Plus M.2 PCIe NVMe 2 To</p>
+          <p>Boîtier MSI MAG PANO M100R PZ Black</p>
+          <p class="price">2400€</p>
+          <a href="#" class="add-to-basket" 
+          onclick="addFeaturedPCToCart(
+              'PC White Stone', 
+              '/Website Beta/IMAGES/Image complémentaires/PC/PC Orion GEFORCE RTX 5080  (Aucun).png', 
+              '2400€', 
+              ['Carte graphique Nvidia GeForce RTX 5080', 'Processeur AMD Ryzen 7 9800X3D', 'RAM Kingston FURY Renegade RGB 2x16 Go DDR5 6000 Mhz', 'SSD Samsung 990 EVO Plus M.2 PCIe NVMe 2 To', 'Boîtier MSI MAG PANO M100R PZ Black']
+          )">
+          Ajouter au panier
+       </a>
+    </div>
+</div>
+</div>
+</div>
+</div>   
+<button class="carousel-button next" onclick="moveCarousel(1)">&#10095;</button>
+</div>   
+</div>
+
+    <script>
+      let currentIndex = 0;
+      const cardsToShow = 3;
+
+      function moveCarousel(direction) {
+          const carousel = document.querySelector('.carousel-container');
+          const cards = document.querySelectorAll('.card');
+          const cardWidth = cards[0].offsetWidth + 20;
+          currentIndex += direction;
+
+          if (currentIndex < 0) {
+              currentIndex = 0; 
+          } else if (currentIndex > cards.length - cardsToShow) {
+              currentIndex = cards.length - cardsToShow;
+          }
+
+          carousel.style.transform = `translateX(${-currentIndex * cardWidth}px)`;
+      }
+      
+  </script>
+
+<!--Ceci sont les scripts pour l'intégration du chatbot-->
+<script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2025/02/08/18/20250208181033-8Q1W4VK1.js"></script>
+
+<div class="main">
+    <div class="toggle-button">
+        <div class="arrow-icon"></div>
+    </div>
+
+    <div class="currentplaying">
+        <img src="/Lignes de codes utiles pour le HTML/Images diverses/Spotify.png" alt="Spotify Logo" class="spotify">
+        <p class="heading">Nos musiques</p>
+    </div>
+
+    <div class="loader" data-src="/Playlist/Chill/Alex G, Emily Yacina - Treehouse.mp3">
+        <div class="song">
+            <p class="name-music">Treehouse</p>
+            <p class="artist">Emily Yacina</p>
+        </div>
+        <div class="albumcover"><img src="/Miniature des musiques/CHILL/Treehouse.jpg" width="10%"></div>
+        <div class="play"></div>
+    </div>
+
+    <div class="loader" data-src="/Playlist/Chill/Génération TV - Amicalement Votre.mp3">
+        <div class="song">
+            <p class="name-music">Amicalement Votre</p>
+            <p class="artist">Génération TV</p>
+        </div>
+        <div class="albumcover"><img src="/Miniature des musiques/CHILL/Amicalement votre.jpg" width="10%"></div>
+        <div class="play"></div>
+    </div>
+
+    <div class="loader" data-src="/Playlist/Chill/TV Girl - Not Allowed.mp3">
+        <div class="song">
+            <p class="name-music">Not Allowed</p>
+            <p class="artist">TV Girl</p>
+        </div>
+        <div class="albumcover"><img src="/Miniature des musiques/CHILL/Not allowed.jpg" width="10%"></div>
+        <div class="play"></div>
+    </div>
+
+    <div class="loader" data-src="/Playlist/Chill/Vandalism - bleach.mp3">
+        <div class="song">
+            <p class="name-music">Vandalism</p>
+            <p class="artist">bleach</p>
+        </div>
+        <div class="albumcover"><img src="/Miniature des musiques/CHILL/Vandalism - bleach.jpg" width="10%"></div>
+        <div class="play"></div>
+    </div>
+
+</div>
+<footer>
+    <p>Suivez-nous : 
+        <a href="#">Facebook</a> | 
+        <a href="#">Twitch</a> | 
+        <a href="#">Youtube</a> | 
+        <a href="#">Instagram</a> |
+        <a href="#">Discord</a> |
+    </p>
+    <p>&copy; Components Bear : Tous droits réservés.</p>
+</footer>
+</body>
+</html>

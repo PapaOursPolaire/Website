@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moniteur</title>
+  <link rel="stylesheet" href="Moniteur.css">
+  <script src="Moniteur.js" defer></script>
+  <link rel="icon" href="/Website Beta/Icones/Logo.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <video autoplay muted loop id="backgroundVideo">
+    <source src="/Website Beta/VIDEOS/Background.mp4" type="video/mp4">
+  </video>
+</head>
+<body class="bg-gray-100 font-sans">
+  <div class="mx-auto" style="max-width: 1600px;">
+    <div class="title-filters-container">
+      <div class="p-4 border-b">
+        <div class="tower-header">
+          <h1 class="tower-title">Moniteur</h1>
+          <span id="productCount" class="alimentation-count">(0)</span>
+        </div>
+        <div class="grid grid-cols-3 gap-4">
+          <select id="brandFilter" class="border p-2 rounded">
+            <option value="" disabled selected hidden>Marques</option>
+            <option value="">Toutes les marques</option>
+            <option value="Acer">Acer</option>
+            <option value="AOC">AOC</option>
+            <option value="ASUS">ASUS</option>
+            <option value="Corsair">Corsair</option>
+            <option value="Gigabyte">Gigabyte</option>
+            <option value="iiyama">iiyama</option>
+            <option value="LG">LG</option>
+            <option value="MSI">MSI</option>
+            <option value="Philips">Philips</option>
+            <option value="Samsung">Samsung</option>
+          </select>
+          <select id="poucesFilter" class="border p-2 rounded">
+            <option value="" disabled selected hidden>Taille de l'écran (en pouces)</option>
+            <option value="">Toutes les tailles</option>
+            <option value="16">16 pouces</option>
+            <option value="17">17 pouces</option>
+            <option value="18">18 pouces</option>
+            <option value="19">19 pouces</option>
+            <option value="20">20 pouces</option>
+            <option value="21">21 pouces</option>
+            <option value="22">22 pouces</option>
+            <option value="23">23 pouces</option>
+            <option value="24">24 pouces</option>
+            <option value="25">25 pouces</option>
+            <option value="27">27 pouces</option>
+            <option value="28">28 pouces</option>
+            <option value="30">30 pouces</option>
+            <option value="32">32 pouces</option>
+            <option value="34">34 pouces (UltraWide)</option>
+            <option value="38">38 pouces (UltraWide)</option>
+            <option value="40">40 pouces</option>
+            <option value="42">42 pouces</option>
+            <option value="43">43 pouces</option>
+            <option value="49">49 pouces (UltraWide)</option>
+            <option value="50">50 pouces</option>
+            <option value="55">55 pouces</option>
+            <option value="60">60 pouces</option>
+            <option value="65">65 pouces</option>
+            <option value="70">70 pouces</option>
+            <option value="75">75 pouces</option>
+            <option value="80">80 pouces</option>
+            <option value="85">85 pouces</option>
+            <option value="98">98 pouces</option>
+          </select>
+          <select id="PXLFilter" class="border p-2 rounded">
+            <option value="" disabled selected hidden>Résolution de l'écran (en pixels)</option>
+            <option value="">Toutes les résolutions</option>
+            <option value="1366x768">1366x768 (HD)</option>
+            <option value="1440x900">1440x900 (WXGA+)</option>
+            <option value="1600x900">1600x900 (HD+)</option>
+            <option value="1680x1050">1680x1050 (WSXGA+)</option>
+            <option value="1920x1080">1920x1080 (Full HD)</option>
+            <option value="1920x1200">1920x1200 (WUXGA)</option>
+            <option value="2560x1440">2560x1440 (QHD)</option>
+            <option value="2560x1600">2560x1600 (WQHD)</option>
+            <option value="3440x1440">3440x1440 (UltraWide QHD)</option>
+            <option value="3840x2160">3840x2160 (4K UHD)</option>
+            <option value="5120x2880">5120x2880 (5K)</option>
+            <option value="7680x4320">7680x4320 (8K UHD)</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="grid grid-cols-3 gap-0">
+      <div class="main-container col-span-3 lg:col-span-2">
+        <div class="overflow-x-auto">
+          <table class="table-auto w-full text-left">
+            <thead class="bg-gray-100">
+              <tr>
+                <th class="filter p-3">MODELES</th>
+                <th>
+                  <div class="search-container">
+                    <input type="text" id="searchBar" class="search-bar" placeholder="Rechercher...">
+                    <span class="search-icon">🔍</span>
+                  </div>
+                </th>
+                <th class="filter p-3 cursor-pointer">NOTE</th>
+                <th class="filter p-3 cursor-pointer">PRIX</th>
+                <th class="filter p-3 cursor-pointer">DISPONIBILITÉ</th>
+              </tr>
+            </thead>
+            <tbody class="scrollable-products">
+              <!-- Les moniteurs seront ajoutés ici-->
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="col-span-3 lg:col-span-1">
+        <div>
+          <a href="/Website Beta/Page des périphériques/Périphériques.html" class="close-button">X</a>
+        </div>
+        <div>
+          <img src="#" alt="" class="rounded-lg w-full">
+        </div>
+        <div class="mt-4">
+          <h2 class="font-bold text-lg"></h2>
+          <p class="text-gray-600 text-sm mt-2"></p>
+        </div>
+        <div class="p-4 text-right">
+          <button id="validateButton" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+            <a href="/Website Beta/Page du panier/Panier.html">VALIDER</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component Bear</title>
+    <link rel="icon" href="../IMAGES/Image complémentaires/Logo.png">
+    <link rel="stylesheet" href="recherche.css">
+    <link rel="icon" href="../IMAGES/Image complémentaires/Logo site.jpg">
+    <video autoplay muted loop id="backgroundVideo">
+        <source src="../VIDEOS/Background.mp4" type="video/mp4">
+    </video>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../Page principale/Configurateur PC.html" class="logo">
+                <img src="../IMAGES/Image complémentaires/Logo.png" alt="header-icon" width="50px">
+            </a>
+        </div>
+        
+        <div class="name">
+            <p>Component Bear</p>
+        </div>
+
+        <div class="search-bar">
+            <form action="recherche.html" method="GET">
+                <input type="text" id="search-input" name="q" placeholder="Rechercher un produit, une marque, une catégorie...">
+                <button type="submit">🔍</button>
+            </form>
+        </div>
+
+        <div class="icons">
+            <div class="picture-icon" style="text-decoration: none;">
+                <a href="../Page de connection/connection.html">
+                    <img src="../IMAGES/Image complémentaires/Red avatar.png" width="90px" alt="">
+                    <p>Compte</p>
+                </a>
+            </div>
+            <div class="picture-icon" style="text-decoration: none;">
+                <a href="../Page du panier/Panier.html">
+                    <img src="../IMAGES/Image complémentaires/Red panier.png" width="51px" alt="">
+                    <p>Panier</p>
+                </a>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../Page principale/Configurateur PC.html">Configurateur PC</a></li>
+            <li><a href="../Page des composants/Composants.html">Composants</a></li>
+            <li><a href="../Page des périphériques/Périphériques.html">Périphériques</a></li>
+            <li><a href="../Page de contact/Contactez-nous.html">Contactez-nous</a></li>
+            <li><a href="../Page d'informations sur notre entreprise/QSN.html">Qui sommes-nous ?</a></li>
+        </ul>
+    </nav>
+    <div class="ligne-rgb"></div>
+    <div class="main-layout">
+
+        <div class="filters-container" id="filters-container">
+            <h2>Filtrer les produits :</h2>
+
+            <div class="filter-section">
+                <label for="category-select">Catégories</label>
+                <select id="category-select">
+                    <option value="" selected hidden>Sélectionner</option>
+                    <option value="">Toutes les catégories</option>
+                    <optgroup label="Composants">
+                    <option value="CPU">Processeurs</option>
+                    <option value="Refroidissement">Refroidissement</option>
+                    <option value="cartes-mères">Cartes mères</option>
+                    <option value="RAM">Mémoire RAM</option>
+                    <option value="GPU">Cartes graphiques</option>            
+                    <option value="HDD" >Disques dur HDD</option>
+                    <option value="SSD" >Disques dur SSD</option>
+                    <option value="boîtier">Boitier</option>
+                    <option value="alimentation">Alimentation</option>
+                    </optgroup>
+                    <optgroup label="Périphériques">
+                    <option value="clavier">Claviers</option>
+                    <option value="souris">Souris</option>
+                    <option value="tapis">Tapis de souris</option>
+                    <option value="Moniteurs">Ecrans</option>
+                    <option value="Enceintes">Enceintes</option>
+                    <option value="Casques">Casques-micro</option>
+                    </optgroup>
+                    <optgroup label="Options & Accessoires">
+                    <option value="SATA">Câbles personnalisés</option>
+                    <option value="pate">Pâte thermique</option>
+                    <option value="OS">Système d'exploitation</option>
+                    <option vaalue="ventilateur">Ventilateurs de boîtier</option>
+                </select>
+            </div>
+
+            <div class="filter-section">
+                <label for="brand-select">Marques</label>
+                <select id="brand-select">
+                    <option value="" selected hidden>Sélectionner</option>
+                    <option value="">Toutes les marques</option>
+                    <optgroup label="marques de composants">
+                    <option value="Intel">Intel</option>
+                    <option value="AMD">AMD</option>
+                    <option value="nvidia">NVIDIA</option>
+                    <option value="samsung">Samsung</option>
+                    <option value="seagate">Seagate</option>
+                    <option value="western-digital">Western Digital</option>
+                    <option value="asus">ASUS</option>
+                    <option value="msi">MSI</option>
+                    <option value="gigabyte">Gigabyte</option>
+                    <option value="nzxt">NZXT</option>
+                    <option value="be-quiet">Be Quiet</option>
+                    <option value="corsair">Corsair</option>
+                    <option value="evga">EVGA</option>
+                    <option value="g-skill">G.Skill</option>
+                    <option value="kingston">Kingston</option>
+                    <option value="crucial">Crucial</option>
+                    <option value="Seasonic">Seasonic</option>
+                    <option value="coolermaster">Cooler Master</option>
+                    <option value="thermaltake">Thermaltake</option>
+                    <option value="fractal-design">Fractal Design</option>
+                    <option value="lian-li">Lian Li</option>
+                    <option value="phanteks">Phanteks</option>
+                    <option value="Antec">Antec</option>
+                    <option value="AC">AeroCool</option>
+                    <option value="aorus">Aorus</option>
+                    <option value="zotac">Zotac</option>
+                    <option value="pny">PNY</option>
+                    <option value="xigmatek">Xigmatek</option>
+                    <option value="DeepCool">DeepCool</option>
+                    <option value="WD-Black">WD Black</option>
+                    <option value="Toshiba">Toshiba</option>
+                    <option value="Sapphire">Sapphire</option>
+                    <option value="PowerColor">PowerColor</option>
+                    <option value="Gainward">Gainward</option>
+                    <option value="ASRock">ASRock</option>
+                    <option value="Zalman">Zalman</option>
+                    <option value="Valkyrie">Valkyrie</option>
+                    <option value="TRYX">TRYX</option>
+                    <option value="FoxSpirit">FoxSpirit</option>
+                    <option value="Enermax">Enermax</option>
+                    <option value="BitFenix">BitFenix</option>
+                    <option value="Arctic">Arctic</option>
+                    <option value="Akasa">Akasa</option>                   
+                    </optgroup>
+
+                    <optgroup label="marques de périphériques">
+                    <option value="logitech">Logitech G</option>
+                    <option value="razer">Razer</option>
+                    <option value="corsair">Corsair</option>
+                    <option value="steelseries">SteelSeries</option>
+                    <option value="hyperx">HyperX</option>
+                    <option value="oplite">Oplite</option>
+                    <option value="OnLan">OnLan</option>
+                    <option value="steelseries">SteelSeries</option>
+                    <option value="Corsair">Corsair</option>
+                    <option value="CoolerMaster">Cooler Master</option>
+                    <option value="Asus">Asus</option>
+                    <option value="MSI">MSI</option>
+                    <option value="turtlebeach">Turtle Beach</option>
+                    <option value="roccat">Roccat</option>
+                    <option value="spirit-of-gamer">Spirit of Gamer</option>
+                    <option value="samsung">Samsung</option>
+                    <option value="lg">LG</option>
+                    <option value="acer">Acer</option>
+                    <option value="benq">BenQ</option>
+                    <option value="aoc">AOC</option>
+                    <option value="iiyama">Iiyama</option>
+                    <option value="viewsonic">ViewSonic</option>
+                    <option value="philips">Philips</option>
+                    <option value="hp">HP</option>
+                    <option value="gigabyte">Gigabyte</option>
+                    <option value="marsgamming">Mars Gaming</option>
+                    <option value="hecate">Hecate</option>
+                    <option value="edifier">Edifier</option>
+                    <option value="trust">Trust</option>
+                    <option value="Advance">Advance</option>
+                    </optgroup>
+
+                    <optgroup label="marques d'options & accessoires">
+                    <option value="cablemod">CableMod</option>
+                    <option value="artic">Arctic</option>
+                    <option value="microsoft">Microsoft</option>
+                    <option value="noctua">Noctua</option>
+                    <option value="coolmoon">Coolmoon</option>
+                    <option value="marsgaming">Mars Gaming</option>
+                    <option value="lianli">Lian Li</option>
+                    </optgroup>
+
+                </select>
+            </div>
+    
+<div class="filter-section">
+    <label for="price-range">Prix (en €)</label>
+    <input type="range" id="price-range" min="1" max="25000" value="25000">
+    <input type="number" id="price-input" min="1" max="25000" value="25000" placeholder="Budget max">
+</div>
+    
+            <button class="more-filters">+ de filtres (indisponible)</button>
+
+    
+            <div class="filter-section">
+                <label for="in-stock-only" class="toggle-switch">
+                    <input type="checkbox" id="in-stock-only" class="toggle-input">
+                    <span class="toggle-slider"></span>
+                </label>
+                <span class="toggle-label">Voir uniquement les produits en stock</span>
+            </div>
+        </div>
+    
+        <div class="main-content">
+            <div id="search-results-header">
+                <h2>Les résultats pour "<span id="search-keywords"></span>"</h2>
+                <p><span id="product-count"></span> produits correspondent</p>
+                <div class="sort-container">
+                    <span>Trier par :</span>
+                    <select id="sort-by">
+                        <option value="alphabetical">Alphabétique</option>
+                        <option value="price-asc">Prix croissant</option>
+                        <option value="price-desc">Prix décroissant</option>
+                        <option value="availability">Disponibilité</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="tab-buttons">
+                <button class="tab-button active" onclick="showTab('products')">Produits</button>
+                <button class="tab-button" onclick="showTab('categories')">Catégories</button>
+                <button class="tab-button" onclick="showTab('brands')">Marques</button>
+            </div>
+
+<div id="products" class="tab-content active">
+    <h2>Produits</h2>
+    <table class="product-table">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Nom</th>
+                <th>Description</th>
+                <th>Disponibilité</th>
+                <th>Prix</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="product-list">
+            <!-- Les produits seront insérés ici -->
+        </tbody>
+    </table>
+</div>
+
+<div id="categories" class="tab-content">
+  
+    <div class="category-list">
+        <div class="category-title"><h2>Composants :</h2></div>
+
+        <div class="category-card">
+            <img src="/Website Beta/Icones/CPU Icon.jpg" alt="CPU Icon" class="category-logo">
+            <span class="category-name">Processeur</span>
+            <button class="view-button">
+                <a href="/Website Beta/Page des composants indépendants/Processeur/CPU.html">Voir</a>
+            </button>
+        </div>
+    
+        <div class="category-card">
+            <img src="/Website Beta/Icones/VENTIRAD Icon.jpg" alt="Cooling Icon" class="category-logo">
+            <span class="category-name">Ventirad et AIO</span>
+            <button class="view-button">
+                <a href="/Website Beta/Page des composants indépendants/Ventirad et AIO/Ventirad et AIO.html">Voir</a>
+            </button>
+        </div>
+    
+        <div class="category-card">
+            <img src="/Website Beta/Icones/MOTHERBOARD Icon.jpg" alt="Motherboard Icon" class="category-logo">
+            <span class="category-name">Carte mère</span>
+            <button class="view-button">
+                <a href="/Website Beta/Page des composants indépendants/Carte mère/Carte mère.html">Voir</a>
+            </button>
+        </div>
+    
+        <div class="category-card">
+            <img src="/Website Beta/Icones/RAM Icon.png" alt="RAM Icon" class="category-logo">
+            <span class="category-name">Mémoire vive</span>
+            <button class="view-button">
+                <a href="/Website Beta/Page des composants indépendants/Mémoire vive/RAM.html">Voir</a>
+            </button>
+        </div>
+    
+        <div class="category-card">
+            <img src="/Website Beta/Icones/GPU Icon.jpg" alt="GPU Icon" class="category-logo">
+            <span class="category-name">Carte graphique</span>
+            <button class="view-button">
+                <a href="/Website Beta/Page des composants indépendants/Carte graphique/GPU.html">Voir</a>
+            </button>
+        </div>
+    
+        <div class="category-card">
+            <img src="/Website Beta/Icones/SSD Icon.jpg" alt="SSD Icon" class="category-logo">
+            <span class="category-name">SSD</span>
+            <button class="view-button">
+                <a href="/Website Beta/Page des composants indépendants/SSD/SSD.html">Voir</a>
+            </button>
+        </div>
+    
+        <div class="category-card">
+            <img src="/Website Beta/Icones/HDD Icon.jpg" alt="HDD Icon" class="category-logo">
+            <span class="category-name">Disque dur</span>
+            <button class="view-button">
+                <a href="/Website Beta/Page des composants indépendants/HDD/HDD.html">Voir</a>
+            </button>
+        </div>
+
+        <div class="category-card">
+            <img src="/Website Beta/Icones/TOWER Icon.jpg" alt="Case Icon" class="category-logo">
+            <span class="category-name">Boîtier</span>
+            <button class="view-button">
+                <a href="/Website Beta/Page des composants indépendants/Boîtier/Boîtier.html">Voir</a>
+            </button>
+        </div>
+    
+        <div class="category-card">
+            <img src="/Website Beta/Icones/POWER SUPPLY Icon.jpg" alt="PSU Icon" class="category-logo">
+            <span class="category-name">Alimentation</span>
+            <button class="view-button">
+                <a href="/Website Beta/Page des composants indépendants/Alimentation/Alimentation.html">Voir</a>
+            </button>
+        </div>
+
+        <div class="category-title"><h2>Options & accessoires :</h2></div>
+    
+        <div class="category-card">
+            <img src="../IMAGES/images options/SATA.png" alt="Cable Icon" class="category-logo">
+            <span class="category-name">Câble personnalisé</span>
+            <button class="view-button">
+                <a href="/Website Beta/Pages des options indépendantes/SATA/SATA.html">Voir</a>
+            </button>
+        </div>
+    
+        <div class="category-card">
+            <img src="../IMAGES/images options/ventilateur.png" alt="Fan Icon" class="category-logo">
+            <span class="category-name">Ventilateur de boîtier</span>
+            <button class="view-button">
+                <a href="/Website Beta/Pages des options indépendantes/Ventilateur/Ventilateur.html">Voir</a>
+            </button>
+        </div>
+
+        <div class="category-title"><h2>Périphériques :</h2></div>
+ 
+        <div class="category-card">
+            <img src="../IMAGES/images périphériques/Souris.png" alt="Mouse Icon" class="category-logo">
+            <span class="category-name">Souris</span>
+            <button class="view-button">
+                <a href="/Website Beta/Page des périphériques indépendants/Souris/Souris.html">Voir</a>
+            </button>
+        </div>
+    
+        <div class="category-card">
+            <img src="../IMAGES/images périphériques/Clavier.png" alt="Keyboard Icon" class="category-logo">
+            <span class="category-name">Clavier</span>
+            <button class="view-button">
+                <a href="/Website Beta/Page des périphériques indépendants/Clavier/Clavier.html">Voir</a>
+            </button>
+        </div>
+    
+        <div class="category-card">
+            <img src="../IMAGES/images périphériques/Moniteur.png" alt="Monitor Icon" class="category-logo">
+            <span class="category-name">Moniteur</span>
+            <button class="view-button">
+                <a href="/Website Beta/Page des périphériques indépendants/Moniteur/Moniteur.html">Voir</a>
+            </button>
+        </div>
+    
+        <div class="category-card">
+            <img src="../IMAGES/images périphériques/Enceintes.png" alt="Speakers Icon" class="category-logo">
+            <span class="category-name">Enceintes</span>
+            <button class="view-button">
+                <a href="/Website Beta/Page des périphériques indépendants/Enceintes/Enceintes.html">Voir</a>
+            </button>
+        </div>
+    
+        <div class="category-card">
+            <img src="../IMAGES/images périphériques/Tapis de souris.png" alt="Mousepad Icon" class="category-logo">
+            <span class="category-name">Tapis de souris</span>
+            <button class="view-button">
+                <a href="/Website Beta/Page des périphériques indépendants/Tapis de souris/Tapis de souris.html">Voir</a>
+            </button>
+        </div>
+    
+        <div class="category-card">
+            <img src="../IMAGES/images périphériques/Casque-micro.png" alt="Headset Icon" class="category-logo">
+            <span class="category-name">Casque-micro</span>
+            <button class="view-button">
+                <a href="/Website Beta/Page des périphériques indépendants/Casque-micro/Casque-micro.html">Voir</a>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div id="brands" class="tab-content">
+    <div class="brand-list">
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Nvidia.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">Nvidia</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo  ViewSonic.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">ViewSonic</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo  WD_Black.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">WD_Black</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Acer.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">Acer</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Acezone.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">Acezone</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Activision.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">Activision</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Adobe.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">Adobe</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Advance.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">Advance</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Aeotec.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">Aeotec</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo AeroCool.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">AeroCool</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo AMD.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">AMD</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Antec.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">Antec</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo AntLion Audio.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">AntLion Audio</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo AOC.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">AOC</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Aorus.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">Aorus</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo ASRock.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">ASRock</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Astro.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">Astro</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo ASUS.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">ASUS</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo be quiet.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">be quiet !</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Benq.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">Benq</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Canon.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">Canon</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Cherry.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">Cherry</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Corsair.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">Corsair</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo DeepCool.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">DeepCool</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo D-Link.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">D-Link</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo EA.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">Electronic Arts</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Edifier.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">Edifier</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Elgato.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">Elgato</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Energizer.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">Energizer</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Enermax.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">Enermax</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Epson.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">Epson</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo EVGA.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">EVGA</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Fairphone.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">Fairphone</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Ferrari.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">Ferrari</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo fox spirit.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">Fox spirit</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo fresh  n rebel.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">Fresh'n Rebel</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo gemini.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">Gemini</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Gigabyte.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">Gigabyte</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Google.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">Google</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo GoPro.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">GoPro</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo GSkill.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">G.Skill</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Hello Kitty.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">Hello Kitty</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Hisense.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">Hisense</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Honor.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">Honor</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo HP.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">HP</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Huawei.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">Huawei</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo iiyama.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">iiyama</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Inovu.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">Inovu</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Intel.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">Intel</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo JBL.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">JBL</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo JVC.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">JVC</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo KFA2.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">KFA2</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Kingston.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">Kingston</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Lego.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">Lego</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Lenovo.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">Lenovo</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Lian Li.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">Lian Li</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Logitech G.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">Logitech G</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Logitech.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">Logitech</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Mars Gaming.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">Mars Gaming</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Mercedes.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">Mercedes</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Microsoft.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">Microsoft</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Motorola.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">Motorola</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo MSI.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">MSI</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Nanoleaf.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">Nanoleaf</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Nikon.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">Nikon</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Nintendo.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">Nintendo</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Nokia.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">Nokia</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo NZXT.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">NZXT</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo On Lan.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">On Lan</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Panasonic.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">Panasonic</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Phanteks.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">Phanteks</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Philips.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">Philips</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo PNY.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">PNY</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Razer.png" alt="Logo" class="brand-logo">
+            <span class="brand-name">Razer</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Rhinoshield.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">Rhinoshield</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Roccat.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">Roccat</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Rockstar Games.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">Rockstar Games</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Samsung.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">Samsung</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Samsung.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">Samsung</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo SanDisk.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">SanDisk</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Seagate.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">Seagate</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Seasonic.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">Seasonic</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Sega.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">Sega</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Sony.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">Sony</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Speedlink.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">Speedlink</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Spirit of gamer.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">Spirit of game</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Square Enix.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">Square Enix</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo TCL.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">TCL</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo The G-Lab.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">The G-Lab</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Thermalright.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">Thermalright</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Thermaltake.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">Thermaltake</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Toshiba.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">Toshiba</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo tp-link.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">TP LINK</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo trhustmaster.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">Trhustmaster</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo trust gaming.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">Trust Gaming</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo trust gaming.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">Trust Gaming</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo trust.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">Trust</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo TRYX.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">TRYX</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/logo Turtle Beach.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">Turtle Beach</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Ubisoft.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">Ubisoft</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Valkyrie.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">Valkyrie</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Western Digital.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">Western Digital</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Xiaomi.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">Xiaomi</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Xigmatek.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">Xigmatek</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Yamaha.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">Yamaha</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Zalman.jpg" alt="Logo" class="brand-logo">
+            <span class="brand-name">Zalman</span>
+            <button class="view-button">Voir</button>
+        </div>
+        <div class="brand-card">
+            <img src="../IMAGES/Image complémentaires/Logos/Logo Zotac.gif" alt="Logo" class="brand-logo">
+            <span class="brand-name">Zotac</span>
+            <button class="view-button">Voir</button>
+        </div>
+    </div>
+</div>
+    <script src="recherche.js"></script>
+</body>
+</html>

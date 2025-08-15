@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'inscription</title>
+    <link rel="stylesheet" href="Sign up now.css">
+    <link rel="icon" href="../IMAGES/Image complémentaires/Logo site.jpg">
+    <video autoplay muted loop id="backgroundVideo">
+        <source
+         src="../VIDEOS/Background.mp4"
+         type="video/mp4"></video>
+</head>
+<body>
+        <header>
+        <div class="logo">
+            <a href="/Website Beta/Page principale/Configurateur PC.html" class="logo">
+                <img src="/Website Beta/IMAGES/Image complémentaires/Logo.png" alt="header-icon" width="50px">
+            </a>
+        </div>
+            
+        <div class="name">
+            <p>Component Bear</p>
+        </div>
+    
+        <div class="search-bar">
+            <form action="../Page recherche/recherche.html" method="GET">
+                <input type="text" id="search-input" name="q" placeholder="Rechercher un produit, une marque, une catégorie...">
+                <button type="submit">🔍</button>
+            </form>
+        </div>
+    
+        <div class="icons">
+            <div class="picture-icon" style="text-decoration: none;">
+                <a href="/Website Beta/Page de connection/connection.html">
+                    <img src="/Website Beta/IMAGES/Image complémentaires/Red avatar.png" width="90px" alt="">
+                    <p>Compte</p>
+                </a>
+            </div>
+            <div class="picture-icon" style="text-decoration: none;">
+                <a href="/Website Beta/Page du panier/Panier.html">
+                    <img src="/Website Beta/IMAGES/Image complémentaires/Red panier.png" width="51px" alt="">
+                    <p>Panier</p>
+                </a>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/Website Beta/Page principale/Configurateur PC.html">Configurateur PC</a></li>
+            <li><a href="/Website Beta/Page des composants/Composants.html">Composants</a></li>
+            <li><a href="/Website Beta/Page des périphériques/Périphériques.html">Périphériques</a></li>
+            <li><a href="/Website Beta/Page de contact/Contactez-nous.html">Contactez-nous</a></li>
+            <li><a href="/Website Beta/Page d'informations sur notre entreprise/QSN.html">Qui sommes-nous ?</a></li>
+        </ul>
+    </nav>
+    <div class="ligne-rgb"></div>
+    <div class="form-container">
+        <h2 class="form-title">S'inscrire</h2>
+        <form class="form-table">
+            <table>
+                <tr>
+                    <td><label name="prenom" for="first-name">Prénom :</label></td>
+                    <td><input type="text" id="first-name" placeholder="Prénom"></td>
+                </tr>
+                <tr>
+                    <td><label name="nom" for="last-name">Nom :</label></td>
+                    <td><input type="text" id="last-name" placeholder="Nom"></td>
+                </tr>
+                <tr>
+                    <td><label name="mail" for="email">E-mail:</label></td>
+                    <td><input type="email" required="@" id="email" placeholder="Email"></td>
+                </tr>
+                <tr>
+                    <td><label name="confirm-mail" for="confirm-email">Confirmez l'E-mail:</label></td>
+                    <td><input type="email" required="@" id="confirm-email" placeholder="Confirmer l'Email"></td>
+                </tr>
+                <tr>
+                    <td><label name="mdp" for="password">Mot de passe :</label></td>
+                    <td><input type="password" id="password" placeholder="Mot de passe"></td>
+                </tr>
+                <tr>
+                    <td><label name="confirm_mdp" for="confirm-password">Confirmez le mot de passe:</label></td>
+                    <td><input type="password" id="confirm-password" placeholder="Confirmez le mot de passe"></td>
+                </tr>
+                <tr>
+                    <td><label name="genre" for="gender">Genre :</label></td>
+                    <td>
+                        <select id="gender">
+                            <option value="ours">Ours</option>
+                            <option value="male">Homme</option>
+                            <option value="femelle">Femme</option>
+                            <option value="shrek">Shrek</option>
+                            <option value="objet">Avion de chasse ascendant table basse </option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label name="naissance" for="age">Date de naissance :</label></td>
+                    <td><input type="date" id="age"></td>
+                </tr>
+            </table>
+            <button type="submit" class="submit-btn"><a href="../Page principale/Configurateur PC.html">S'inscrire</a></button>
+            <p class="login-text">Avez-vous déjà un compte ? 
+                <a href="../Page de connection/connection.html" class="login-link">Connectez-vous</a>
+            </p>
+        </form>
+    </div>
+</body>
+</html>
+    

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disque dur HDD</title>
+  <link rel="stylesheet" href="HDD.css">
+  <script src="HDD.js" defer></script>
+  <link rel="icon" href="/Website Beta/Icones/Logo.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <video autoplay muted loop id="backgroundVideo">
+    <source src="/Website Beta/VIDEOS/Background.mp4" type="video/mp4">
+  </video>
+</head>
+<body class="bg-gray-100 font-sans">
+  <div class="mx-auto" style="max-width: 1600px;">
+    <div class="title-filters-container">
+      <div class="p-4 border-b">
+        <div class="tower-header">
+          <h1 class="tower-title">Disque dur HDD</h1>
+          <span id="productCount" class="alimentation-count">(0)</span>
+        </div>
+        <div class="grid grid-cols-3 gap-4">
+          <select id="brandFilter" class="border p-2 rounded">
+            <option value="" disabled selected hidden>Marques</option>
+            <option value="">Toutes les marques</option>
+            <option value="ST">Seagate Technology</option>
+            <option value="Toshiba">Toshiba</option>
+            <option value="WDB">WD_Black</option>
+            <option value="Western Digital">Western Digital</option>
+          </select>
+          <select id="diskFilter" class="border p-2 rounded">
+            <option value="" disabled selected hidden>Format de disque</option>
+            <option value="">Tous les formats</option>
+            <option value="2">2" 1/2</option>
+            <option value="3">3" 1/2</option>
+          </select>
+          <select id="GOFilter" class="border p-2 rounded">
+            <option value="" disabled selected hidden>Capacité (en Go)</option>
+            <option value="">Toutes les capacités</option>
+            <option value="1000">1000</option>
+            <option value="2000">2000</option>
+            <option value="3000">3000</option>
+            <option value="4000">4000</option>
+            <option value="6000">6000</option>
+            <option value="8000">8000</option>
+            <option value="10000">10000</option>
+            <option value="12000">12000</option>
+            <option value="14000">14000</option>
+            <option value="16000">16000</option>
+            <option value="18000">18000</option>
+            <option value="20000">20000</option>
+            <option value="22000">22000</option>
+            <option value="24000">24000</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="grid grid-cols-3 gap-0">
+      <div class="main-container col-span-3 lg:col-span-2">
+        <div class="overflow-x-auto">
+          <table class="table-auto w-full text-left">
+            <thead class="bg-gray-100">
+              <tr>
+                <th class="filter p-3">MODELES</th>
+                <th>
+                  <div class="search-container">
+                    <input type="text" id="searchBar" class="search-bar" placeholder="Rechercher...">
+                    <span class="search-icon">🔍</span>
+                  </div>
+                </th>
+                <th class="filter p-3 cursor-pointer">NOTE</th>
+                <th class="filter p-3 cursor-pointer">PRIX</th>
+                <th class="filter p-3 cursor-pointer">DISPONIBILITÉ</th>
+              </tr>
+            </thead>
+            <tbody class="scrollable-products">
+              <!-- Les HDD seront ajoutés ici-->
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="col-span-3 lg:col-span-1">
+        <div>
+          <a href="/Website Beta/Page des composants/Composants.html" class="close-button">X</a>
+        </div>
+        <div>
+          <img src="#" alt="" class="rounded-lg w-full">
+        </div>
+        <div class="mt-4">
+          <h2 class="font-bold text-lg"></h2>
+          <p class="text-gray-600 text-sm mt-2"></p>
+        </div>
+        <div class="p-4 text-right">
+          <button id="validateButton" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+            <a href="/Website Beta/Page du panier/Panier.html">VALIDER</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

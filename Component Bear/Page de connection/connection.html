@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurateur PC</title>
+    <link rel="icon" href="../IMAGES/Image complémentaires\Logo.png">
+    <link rel="stylesheet" href="connection.css">
+    <script src="search-bar.js"></script>
+    <link rel="icon" href="../IMAGES/Image complémentaires\Logo site.jpg">
+    <video autoplay muted loop id="backgroundVideo">
+        <source src="../VIDEOS/Background.mp4" type="video/mp4">
+    </video>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../Page accueil/Accueil.html" class="logo">
+                <img src="../IMAGES/Image complémentaires/Logo.png" alt="header-icon" width="50px">
+            </a>
+        </div>
+        
+        <div class="name">
+            <p>Component Bear</p>
+        </div>
+
+        <div class="search-bar">
+          <form action="../Page recherche/recherche.html" method="GET">
+              <input type="text" id="search-input" name="q" placeholder="Rechercher un produit, une marque, une catégorie...">
+              <button type="submit">🔍</button>
+          </form>
+      </div>
+
+        <div class="icons">
+            <div class="picture-icon" style="text-decoration: none;">
+                <a href="../Page de connection/connection.html">
+                    <img src="../IMAGES/Image complémentaires/Red avatar.png" width="90px" alt="">
+                    <p>Compte</p>
+                </a>
+            </div>
+            <div class="picture-icon" style="text-decoration: none;">
+                <a href="../Page du panier/Panier.html">
+                    <img src="../IMAGES/Image complémentaires/Red panier.png" width="51px" alt="">
+                    <p>Panier</p>
+                </a>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../Page principale/Configurateur PC.html">Configurateur PC</a></li>
+            <li><a href="../Page des composants/Composants.html">Composants</a></li>
+            <li><a href="../Page des périphériques/Périphériques.html">Périphériques</a></li>
+            <li><a href="../Page de contact/Contactez-nous.html">Contactez-nous</a></li>
+            <li><a href="../Page d'informations sur notre entreprise/QSN.html">Qui sommes-nous ?</a></li>
+        </ul>
+    </nav>
+    <div class="ligne-rgb"></div>
+    <br>
+    <div class="form-container">
+        <div class="logo-container">
+         Se connecter
+        </div>
+  
+        <div class="social-buttons">
+          <button class="social-button facebook">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.001 2C6.47813 2 2.00098 6.47715 2.00098 12C2.00098 16.9913 5.65783 21.1283 10.4385 21.8785V14.8906H7.89941V12H10.4385V9.79688C10.4385 7.29063 11.9314 5.90625 14.2156 5.90625C15.3097 5.90625 16.4541 6.10156 16.4541 6.10156V8.5625H15.1931C13.9509 8.5625 13.5635 9.33334 13.5635 10.1242V12H16.3369L15.8936 14.8906H13.5635V21.8785C18.3441 21.1283 22.001 16.9913 22.001 12C22.001 6.47715 17.5238 2 12.001 2Z"></path>
+            </svg>
+                      <span><a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Dfr_CA%26refsrc%3Ddeprecated" style="text-decoration: none;color: white;">Se connecter avec Facebook</a></span>
+  
+          </button>
+          <button class="social-button apple">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.6734 7.2221C10.7974 7.2221 9.44138 6.2261 8.01338 6.2621C6.12938 6.2861 4.40138 7.3541 3.42938 9.0461C1.47338 12.4421 2.92538 17.4581 4.83338 20.2181C5.76938 21.5621 6.87338 23.0741 8.33738 23.0261C9.74138 22.9661 10.2694 22.1141 11.9734 22.1141C13.6654 22.1141 14.1454 23.0261 15.6334 22.9901C17.1454 22.9661 18.1054 21.6221 19.0294 20.2661C20.0974 18.7061 20.5414 17.1941 20.5654 17.1101C20.5294 17.0981 17.6254 15.9821 17.5894 12.6221C17.5654 9.8141 19.8814 8.4701 19.9894 8.4101C18.6694 6.4781 16.6414 6.2621 15.9334 6.2141C14.0854 6.0701 12.5374 7.2221 11.6734 7.2221ZM14.7934 4.3901C15.5734 3.4541 16.0894 2.1461 15.9454 0.850098C14.8294 0.898098 13.4854 1.5941 12.6814 2.5301C11.9614 3.3581 11.3374 4.6901 11.5054 5.9621C12.7414 6.0581 14.0134 5.3261 14.7934 4.3901Z"></path>
+            </svg>
+            <span><a href="https://account.apple.com/sign-in" style="text-decoration: none;color: white;">Se connecter avec Apple</a></span>
+          </button>
+        </div>
+<button class="button google">
+  <svg
+    viewBox="0 0 256 262"
+    preserveAspectRatio="xMidYMid"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622 38.755 30.023 2.685.268c24.659-22.774 38.875-56.282 38.875-96.027"
+      fill="#4285F4"
+    ></path>
+    <path
+      d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055-34.523 0-63.824-22.773-74.269-54.25l-1.531.13-40.298 31.187-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1"
+      fill="#34A853"
+    ></path>
+    <path
+      d="M56.281 156.37c-2.756-8.123-4.351-16.827-4.351-25.82 0-8.994 1.595-17.697 4.206-25.82l-.073-1.73L15.26 71.312l-1.335.635C5.077 89.644 0 109.517 0 130.55s5.077 40.905 13.925 58.602l42.356-32.782"
+      fill="#FBBC05"
+    ></path>
+    <path
+      d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251"
+      fill="#EB4335"
+    ></path>
+  </svg>
+  <span><a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%3Fhl%3Dfr&ec=GAlA8wE&hl=fr&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-200244753%3A1734440023223619&ddm=1" style="text-decoration: none;color: black;">Se connecter avec Google</a></span>
+</button>
+
+        <div class="line"></div>
+        <form class="form">
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" required="@" placeholder="Entrez votre e-mail" name="email" id="email" >
+          </div>
+  
+          <div class="form-group">
+            <label for="password">Mot de passe </label>
+            <input  type="password" name="password" placeholder="Entrez votre mot de passe" id="password">
+          </div>
+          <button type="submit" class="form-submit-btn"><a href="../Page principale/Configurateur PC.html" style="text-decoration: none;color: #4f46e5;">Se connecter</a></button>
+        </form>
+        <a class="forgot-password-link link" href="../Page mot de passe oublié/Forgot password.html">Mot de passe oublié</a>
+        <p class="signup-link">
+          Vous n'avez pas encore de compte ? <br>
+           <br><a class="signup-link link" href="../Page inscription/Sign up now.html">S'inscrire maintenant</a>
+        </p>
+      </div>
+</body>
+</html>

@@ -1,0 +1,787 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: red;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: black;
+  color: red;
+  height: 75px;
+}
+
+video#backgroundVideo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: auto;
+  width: 50px;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.search-bar {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.search-bar form {
+  display: flex;
+  width: 100%; 
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 6px;
+  width: 70%; 
+  border: none;
+  border-radius: 5px;
+  height: 25px;
+  font-size: 15px;
+}
+
+.search-bar button {
+  padding: 6px 10px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: red;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.search-bar button:hover {
+  background-color: #777;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.picture-icon {
+  margin-left: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.picture-icon img {
+  height: auto;
+}
+
+.picture-icon p {
+  margin-top: 5px;
+  font-size: 15px;
+  background-color: black;
+  color: red;
+  text-decoration: none;
+  text-align: center;
+}
+
+.picture-icon a {
+  text-decoration: none;
+}
+
+nav {
+  background-color: black;
+  color: red;
+  padding: 5px;
+  font-size: 25px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  background-color: black;
+  color: red;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.ligne-rgb {
+  height: 5px;
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+  background-size: 200% 100%;
+  animation: rgbAnimation 5s linear infinite;
+}
+
+@keyframes rgbAnimation {
+  0% {
+      background-position: 0% 50%;
+  }
+  100% {
+      background-position: 200% 50%;
+  }
+}
+
+.master-container {
+  display: flex; 
+  justify-content: space-between; 
+  padding: 20px;
+  gap: 20px; 
+}
+
+.master-container > .left-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column; 
+  gap: 20px; 
+}
+
+.master-container > .card.checkout {
+  flex: 0 0 25%; 
+  max-width: 25%; 
+}
+
+#configurations-panier, #composants-panier {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card-config {
+  background-color: transparent;
+}
+
+.configuration-panier {
+  background-color: white !important; 
+  opacity: 0.7;
+  color: red !important; 
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.configuration-details,
+.configuration-name,
+.configuration-price,
+.configuration-components .component {
+  color: red !important; 
+}
+
+.configuration-actions button {
+  color: white !important; 
+  opacity: 0.7;
+}
+
+.preconfig-panier {
+  background-color: white !important; 
+  opacity: 0.7;
+  color: red !important;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.preconfig-details,
+.preconfig-name,
+.preconfig-price,
+.preconfig-components .component {
+  color: red !important; 
+}
+
+.preconfig-actions button {
+  color: white !important;
+  opacity: 0.7;
+}
+
+.card {
+  background-color: white;
+  opacity: 0.8;
+  border-radius: 25px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 15px;
+  text-align: center;
+  display: block; 
+  width: 100%; 
+}
+
+#configurations-panier, #composants-panier {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.produit-panier {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.produit-panier:last-child {
+  border-bottom: none;
+}
+
+.produit-panier img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.nom-produit {
+  font-size: 18px;
+  font-weight: bold;
+  flex: 1;
+}
+
+.prix-produit {
+  font-size: 16px;
+  color: red;
+}
+
+.quantite {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantite button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quantite button:hover {
+  background-color: darkred;
+}
+
+.supprimer-produit {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.supprimer-produit:hover {
+  background-color: darkred;
+}
+
+.separation-line {
+  width: 100%;
+  height: 2px;
+  background-color: #ccc;
+  margin: 20px 0;
+}
+
+.checkout {
+  text-align: center;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  color: red;
+}
+
+.coupons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.coupons input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 70%;
+}
+
+.coupons button {
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.coupons button:hover {
+  background-color: darkred;
+}
+
+.checkout-btn {
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.checkout-btn:hover {
+  background-color: darkred;
+}
+
+.quantite {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantite button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quantite button:hover {
+  background-color: darkred;
+}
+
+.quantite .quantity {
+  font-size: 16px;
+  font-weight: bold;
+  color: red;
+}
+
+.sous-total {
+  font-size: 16px;
+  font-weight: bold;
+  color: red;
+  margin-left: 20px; 
+}
+
+.produit-panier {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.produit-configuration {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+}
+
+.configuration-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.modifier-configuration, .supprimer-configuration {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modifier-configuration:hover, .supprimer-configuration:hover {
+  background-color: darkred;
+}
+
+.quantite-globale {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantite-globale button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quantite-globale button:hover {
+  background-color: darkred;
+}
+
+.quantite-globale .quantity {
+  font-size: 16px;
+  font-weight: bold;
+  color: red;
+}
+
+.configuration-panier {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.total-configuration {
+  font-size: 18px;
+  font-weight: bold;
+  color: red;
+  margin-top: 10px;
+}
+
+.panier-container {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.configuration {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.quantity button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.quantity span {
+  margin: 0 10px;
+}
+
+.total-section {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.checkout-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.checkout-btn:hover {
+  background-color: darkred;
+}
+
+.composants {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.supprimer-produit {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.supprimer-produit:hover {
+  background-color: darkred;
+}
+
+.configuration-panier {
+  background-color: #333; 
+  border-radius: 15px; 
+  padding: 20px;
+  margin-bottom: 20px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: white; 
+}
+
+.preconfig-panier {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.preconfig-image {
+  flex: 0 0 150px; 
+  margin-right: 20px;
+}
+
+.preconfig-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.preconfig-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.preconfig-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.preconfig-price {
+  font-size: 20px;
+  color: red;
+  margin-bottom: 10px;
+}
+
+.preconfig-components {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.preconfig-components .component {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.preconfig-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+.preconfig-actions .quantite {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.preconfig-actions .quantite button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.preconfig-actions .quantite button:hover {
+  background-color: darkred;
+}
+
+.preconfig-actions .supprimer-produit {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.preconfig-actions .supprimer-produit:hover {
+  background-color: darkred;
+}
+
+.configuration-panier {
+  display: flex;
+  align-items: center;
+  background-color: #333; 
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  color: white; 
+}
+
+.configuration-panier {
+  display: flex;
+  align-items: center;
+  background-color: #333; 
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  color: white; 
+}
+
+.configuration-image {
+  flex: 0 0 150px; 
+  margin-right: 20px;
+}
+
+.configuration-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.configuration-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.configuration-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.configuration-price {
+  font-size: 20px;
+  color: red;
+  margin-bottom: 10px;
+}
+
+.configuration-components {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.configuration-components .component {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.configuration-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+.configuration-actions .quantite {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.configuration-actions .quantite button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.configuration-actions .quantite button:hover {
+  background-color: darkred;
+}
+
+.configuration-actions .supprimer-produit {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.configuration-actions .supprimer-produit:hover {
+  background-color: darkred;
+}

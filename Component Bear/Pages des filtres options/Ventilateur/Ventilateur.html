@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ventilateur de boîtier</title>
+  <link rel="stylesheet" href="Ventilateur.css">
+  <script src="Ventilateur.js" defer></script>
+  <link rel="icon" href="/Website Beta/Icones/LoMM.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <video autoplay muted loop id="backgroundVideo">
+    <source src="/Website Beta/VIDEOS/Background.mp4" type="video/mp4">
+  </video>
+</head>
+<body class="bg-gray-100 font-sans">
+  <div class="mx-auto" style="max-width: 1600px;">
+    <!-- Conteneur du haut (titre et filtres) -->
+    <div class="title-filters-container">
+      <div class="p-4 border-b">
+        <div class="tower-header">
+          <h1 class="tower-title">Ventilateur de boîtier</h1>
+          <span id="productCount" class="alimentation-count">(0)</span>
+        </div>
+        <div class="grid grid-cols-3 gap-4">
+          <select id="brandFilter" class="border p-2 rounded">
+            <option value="" disabled selected hidden>Marques</option>
+            <option value="">Toutes les marques</option>
+            <option value="Antec">Antec</option>
+            <option value="Arctic">Arctic</option>
+            <option value="be quiet!">be quiet !</option>
+            <option value="Cooler Master">Cooler Master</option>
+            <option value="Lian Li">Lian Li</option>
+            <option value="Phanteks">Phanteks</option>
+            <option value="Thermalright">Thermalright</option>
+          </select>
+          <select id="ConnecteursFilter" class="border p-2 rounded">
+            <option value="" disabled selected hidden>Connecteur(s)</option>
+            <option value="">Tout les connecteurs</option>
+            <option value="3 Pins Femelle">3 Pins Femelle</option>
+            <option value="4 Pins Femelle">4 Pins Femelle</option>
+            <option value="Alimentation Serial ATA">Alimentation Serial ATA</option>
+            <option value="Connecteur propriétaire">Connecteur propriétaire</option>
+            <option value="LED RGB">Connecteur(s) LED RGB adressable(s)</option>
+          </select>
+          <select id="MMFilter" class="border p-2 rounded">
+            <option value="" disabled selected hidden>Diamètre ventilateur (en MM)</option>
+            <option value="">Tout les diamètres</option>
+            <option value="120">120 mm</option>
+            <option value="140">140 mm</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Conteneurs Gauche et Droit -->
+    <div class="grid grid-cols-3 gap-0">
+      <!-- Conteneur Gauche -->
+      <div class="main-container col-span-3 lg:col-span-2">
+        <!-- Tableau des produits -->
+        <div class="overflow-x-auto">
+          <table class="table-auto w-full text-left">
+            <thead class="bg-gray-100">
+              <tr>
+                <th class="filter p-3">MODELES</th>
+                <th>
+                  <div class="search-container">
+                    <input type="text" id="searchBar" class="search-bar" placeholder="Rechercher...">
+                    <span class="search-icon">🔍</span>
+                  </div>
+                </th>
+                <th class="filter p-3 cursor-pointer">NOTE</th>
+                <th class="filter p-3 cursor-pointer">PRIX</th>
+                <th class="filter p-3 cursor-pointer">DISPONIBILITÉ</th>
+              </tr>
+            </thead>
+            <tbody class="scrollable-products">
+              <!-- Les lignes de produits seront ajoutées ici dynamiquement -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Conteneur Droit -->
+      <div class="col-span-3 lg:col-span-1">
+        <div>
+          <a href="/Website Beta/Page principale/Configurateur PC.html" class="close-button">X</a>
+        </div>
+        <div>
+          <img src="#" alt="" class="rounded-lg w-full">
+        </div>
+        <div class="mt-4">
+          <h2 class="font-bold text-lg"></h2>
+          <p class="text-gray-600 text-sm mt-2"></p>
+        </div>
+        <div class="p-4 text-right">
+          <button id="validateButton" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+            <a href="/Website Beta/Page principale/Configurateur PC.html">VALIDER</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
